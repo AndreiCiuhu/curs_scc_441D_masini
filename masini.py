@@ -8,3 +8,5 @@ app.register_blueprint(test_bp)
 @app.route('/')
 def index():
     return 'Masini'
+
+
