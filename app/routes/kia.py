@@ -16,8 +16,12 @@ def index():
         <p>Kia este un producator sud-coreean de automobile fondat in 1944.</p>
         <ul>
             <li><a href="/masini/kia/modele">Modele Kia</a></li>
-            <li><a href="/masini/kia/detalii?model=sportage">Detalii model</a></li>
         </ul>
+        <h2>Cauta detalii model</h2>
+        <form action="/masini/kia/detalii" method="get">
+            <input type="text" name="model" placeholder="Ex: sportage" style="padding:8px; font-size:16px;"/>
+            <button type="submit" style="padding:8px 16px; font-size:16px; cursor:pointer;">Cauta</button>
+        </form>
     </body>
     </html>
     """
