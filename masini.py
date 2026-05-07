@@ -1,7 +1,7 @@
 from flask import Flask
 
 from routes.test import test_bp
-from routes.kia import Kia_bp
+from routes.kia import kia_bp
 
 app= Flask(__name__)
 app.register_blueprint(test_bp)
