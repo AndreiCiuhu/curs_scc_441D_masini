@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>MAZDA</h1>
+        <p>Proiect Flask pentru tema Masini</p>
+
+        <div class="top-links">
+            <a href="/masini/mazda">Acasa</a>
+            <a href="/masini/mazda/istoric">Istoric</a>
+            <a href="/masini/mazda/motorizare">Motorizare</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h2>{{ title }}</h2>
+
+            {% if content %}
+                <p>{{ content }}</p>
+            {% endif %}
+
+            {% if items %}
+                <ul class="engine-list">
+                    {% for item in items %}
+                        <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
