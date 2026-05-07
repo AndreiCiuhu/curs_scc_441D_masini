@@ -4,7 +4,9 @@ pipeline {
     stages {
         stage('Install dependencies') {
             steps {
-                sh 'pip install -r requirement.txt'
+                sh 'python -m venv venv'
+                sh './venv/bin/pip install -r requirement.txt'
+                sh './venv/bin/python -m unittest discover -s app/test'
             }
         }
         stage('Run tests') {
