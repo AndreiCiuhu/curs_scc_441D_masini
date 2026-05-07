@@ -51,6 +51,7 @@ Aplicatia a fost rulata local cu:
 
 ```bash
 python3 masini.py
+```
 ---
 
 ## Capturi de ecran
