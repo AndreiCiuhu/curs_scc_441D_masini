@@ -1,5 +1,4 @@
 # curs_scc_441D_masini
-# curs_scc_441D_masini
 
 # Funcționalitate Bentley — Ispas Ariana-Elena
 
@@ -21,7 +20,7 @@ Funcționalitatea Bentley este compusă din:
 - adăugarea testelor unitare în `app/test/test_biblioteca_masini.py`;
 - configurarea fișierului `Dockerfile` pentru containerizarea aplicației;
 - configurarea fișierului `Jenkinsfile` pentru rularea pipeline-ului Jenkins;
-- completarea documentației în `README.md`.
+- completarea documentației în fișierul `README.md`.
 
 ---
 
@@ -79,25 +78,31 @@ Comanda folosită pentru pornirea aplicației:
 PYTHONPATH=. python3 masini.py
 ```
 
-Rute testate manual:
+În captura următoare se observă pornirea aplicației Flask local, pe portul `5000`.
+
+<img src="docs/screenshots/00_pornire_locala.png" width="900">
+
+Rutele testate manual au fost:
 
 - `http://127.0.0.1:5000/masini/bentley`
 - `http://127.0.0.1:5000/masini/bentley/culoare`
 - `http://127.0.0.1:5000/masini/bentley/descriere`
 
-În consola aplicației se observă accesarea rutelor Bentley cu status HTTP `200`, ceea ce confirmă funcționarea corectă a paginilor implementate.
-
-<img src="docs/screenshots/11_testare_erori.png" width="900">
-
 ### Pagina Bentley
+
+Pagina `/masini/bentley` afișează elementul ales și butoanele către informațiile specifice.
 
 <img src="docs/screenshots/02_browser_bentley.png" width="900">
 
 ### Pagina „Culoare Bentley”
 
+Pagina `/masini/bentley/culoare` afișează rezultatul funcției `culoare_bentley()`.
+
 <img src="docs/screenshots/03_browser_culoare.png" width="900">
 
 ### Pagina „Descriere Bentley”
+
+Pagina `/masini/bentley/descriere` afișează rezultatul funcției `descriere_bentley()`.
 
 <img src="docs/screenshots/04_browser_descriere.png" width="900">
 
@@ -127,13 +132,13 @@ Rezultatul obținut a fost `OK`, fiind rulate două teste unitare pentru funcți
 
 Aplicația a fost containerizată folosind Docker.
 
-Comanda folosită pentru construirea imaginii:
+Comanda folosită pentru construirea imaginii Docker:
 
 ```bash
 sudo docker build -t masini-app .
 ```
 
-Imaginea Docker `masini-app` a fost creată cu succes.
+Imaginea Docker `masini-app` a fost creată cu succes și apare în lista imaginilor locale.
 
 <img src="docs/screenshots/05_docker_images.png" width="900">
 
@@ -177,14 +182,12 @@ Rezultatul rulării a fost `SUCCESS`.
 
 ### Vizualizare pipeline în Blue Ocean
 
-Pipeline-ul conține următoarele etape:
+În Blue Ocean se observă că toate etapele pipeline-ului au fost executate cu succes:
 
 - `Install dependencies`
 - `Run tests`
 - `Build image`
 - `Deploy`
-
-Toate etapele au fost executate cu succes.
 
 <img src="docs/screenshots/10_blue_ocean_pipeline.png" width="900">
 
