@@ -9,7 +9,19 @@ kia_bp= Blueprint('kia', __name__, url_prefix='/masini/kia')
 
 @kia_bp.route('/', methods=['GET'])
 def index():
-    return f'Kia'
+    return """
+    <html>
+    <body style="font-family:Arial, sans-serif; max-width:800px; margin:40px auto; padding:0 20px;">
+        <h1>Kia</h1>
+        <p>Kia este un producator sud-coreean de automobile fondat in 1944.</p>
+        <ul>
+            <li><a href="/masini/kia/modele">Modele Kia</a></li>
+            <li><a href="/masini/kia/detalii?model=sportage">Detalii model</a></li>
+        </ul>
+    </body>
+    </html>
+    """
+
 
 @kia_bp.route('/modele', methods=['GET'])
 def modele():
@@ -35,9 +47,13 @@ def modele():
     <body style="font-family:Arial, sans-serif; max-width:800px; margin:40px auto; padding:0 20px;">
         <h1>Modele Kia</h1>
         {res}
+        <br>
+        <a href="/masini/kia"> Inapoi la Kia</a>
     </body>
     </html>
     """
+
+
 @kia_bp.route('/detalii', methods=['GET'])
 def detalii():
     model= request.args.get('model', '')
@@ -63,7 +79,7 @@ def detalii():
             <p>Transmisie: {data.get('transmission').upper()}</p>
         </div>
         <br>
-        <a href="/masini/kia">← Inapoi la Kia</a>
+        <a href="/masini/kia"> Inapoi la Kia</a>
     </body>
     </html>
     """
