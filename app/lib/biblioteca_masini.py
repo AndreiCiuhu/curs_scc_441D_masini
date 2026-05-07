@@ -39,3 +39,21 @@ def modele_kia(model: str = '') -> list:
             rezultate.append(res.json()[0])
 
     return rezultate
+
+
+def detalii_kia(model: str = '') -> dict:
+    if not model:
+        return {}
+
+    params= {'make': 'Kia', 'model': model}
+
+    res= requests.get(
+        API_URL,
+        headers={'X-Api-Key': API_KEY},
+        params=params
+    )
+
+    if res.status_code != 200 or not res.json():
+        return {}
+
+    return res.json()[0]
