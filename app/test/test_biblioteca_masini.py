@@ -1,6 +1,11 @@
 import unittest
+
 from unittest.mock import patch, MagicMock
-from lib.biblioteca_masini import modele_kia, detalii_kia
+
+from app.lib.biblioteca_masini import (
+    modele_kia,
+    detalii_kia
+)
 
 class TestModelekia(unittest.TestCase):
 
