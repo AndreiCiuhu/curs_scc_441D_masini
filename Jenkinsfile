@@ -15,21 +15,23 @@ pipeline {
             }
         }
 
-        stage('Install dependencies') {
+        stage('Create virtual environment') {
             steps {
-                sh 'python3 -m pip install --user -r requirement.txt'
+                sh 'python3 -m venv .venv'
+                sh '.venv/bin/python -m pip install --upgrade pip'
+                sh '.venv/bin/pip install -r requirement.txt'
             }
         }
 
         stage('pylint - calitate cod') {
             steps {
-                sh 'python3 -m pylint app/lib/biblioteca_masini.py app/routes/mclaren.py masini.py --disable=C0114,C0116,W0611,R1705 || true'
+                sh '.venv/bin/pylint app/lib/biblioteca_masini.py app/routes/mclaren.py masini.py --disable=C0114,C0116,W0611,R1705 || true'
             }
         }
 
         stage('Unit Testing cu unittest') {
             steps {
-                sh 'PYTHONPATH=. python3 -m unittest discover -s app/test'
+                sh 'PYTHONPATH=. .venv/bin/python -m unittest discover -s app/test'
             }
         }
 
