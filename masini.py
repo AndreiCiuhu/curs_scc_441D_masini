@@ -16,6 +16,7 @@ def index():
         <p>Alegeti o marca:</p>
         <ul>
             <li><a href="/masini/bmw">BMW</a></li>
+            <li><a href="/masini/test">Ruta de Test</a></li>
         </ul>
     </body>
     </html>
