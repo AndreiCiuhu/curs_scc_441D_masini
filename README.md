@@ -51,3 +51,40 @@ Aplicatia a fost rulata local cu:
 
 ```bash
 python3 masini.py
+---
+
+## Capturi de ecran
+
+### Testare in browser
+
+#### Pagina principala
+
+![Pagina principala](docs/images/browser_home.png)
+
+#### Pagina Rolls-Royce
+
+![Pagina Rolls-Royce](docs/images/browser_rollsroyce.png)
+
+#### Pagina Istoric Rolls-Royce
+
+![Istoric Rolls-Royce](docs/images/browser_istoric.png)
+
+#### Pagina Motorizare Rolls-Royce
+
+![Motorizare Rolls-Royce](docs/images/browser_motorizare.png)
+
+---
+
+### Containerizare Docker
+
+#### Imagine Docker creata
+
+![Imagine Docker](docs/images/docker_images.png)
+
+#### Container Docker pornit
+
+![Container Docker](docs/images/docker_ps.png)
+
+#### Loguri container Docker
+
+![Loguri container](docs/images/container_logs.png)
