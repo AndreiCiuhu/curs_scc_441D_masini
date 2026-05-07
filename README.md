@@ -185,14 +185,31 @@ sudo docker logs masini-fiat-container
 
 Pentru documentarea proiectului au fost realizate capturi de ecran pentru:
 
-- aplicația Flask rulată local în browser;
-- rezultatul testelor locale cu `pytest`;
-- imaginea Docker creată;
-- containerul Docker pornit;
-- aplicația accesată din browser din container;
-- logurile containerului cu request-urile HTTP;
-- Jenkins build cu rezultat `SUCCESS`.
+## Capturi de ecran realizate
 
+### Testare locală cu pytest
+
+![Testare locală pytest](docs/images/pytest_local.png)
+
+### Construirea imaginii Docker
+
+![Docker build](docs/images/docker_build.png)
+
+### Container Docker pornit
+
+![Docker ps](docs/images/docker_ps.png)
+
+### Aplicația rulată în browser din container
+
+![Browser container](docs/images/browser_container.png)
+
+### Logurile containerului
+
+![Docker logs](docs/images/docker_logs.png)
+
+### Jenkins build SUCCESS
+
+![Jenkins success](docs/images/jenkins_success.png)
 ---
 
 ## Integrare GitHub
