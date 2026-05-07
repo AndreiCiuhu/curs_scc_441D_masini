@@ -2,3 +2,5 @@ flask
 pytest
 pylint
 gunicorn
+requests
+python-dotenv
