@@ -54,9 +54,14 @@ pipeline {
             }
         }
 
+        stage('Build image') {
+            steps {
+                sh 'docker build -t mazda-imagine .'
+            }
+        }
         stage('Deploy') {
             steps {
-                echo 'In lucru...'
+                sh "docker run -d -p 5000:5000 --name masini-container mazda-imagine"
             }
         }
     }
