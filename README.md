@@ -28,11 +28,12 @@ Aplicatia contine trei pagini principale:
 - Motorizare
 
 Pagina Acasa afiseaza mesajul:
+
 "Va rog sa apasati pe unul dintre butoane pentru a selecta ce doriti sa aflati despre Mazda"
 
 Pagina Istoric prezinta pe scurt brandul Mazda.
 
-Pagina Motorizare prezinta cateva dintre cele mai importante motoare fabricate de Mazda.
+Pagina Motorizare prezinta cateva dintre cele mai importante motoare fabricate de Mazda, cu detalii tehnice scurte.
 
 ## Rute implementate
 
@@ -65,8 +66,12 @@ python masini.py
 Au fost verificate in browser urmatoarele rute:
 
 http://127.0.0.1:5000/masini/mazda
+
 http://127.0.0.1:5000/masini/mazda/istoric
+
 http://127.0.0.1:5000/masini/mazda/motorizare
+
+Aplicatia a functionat corect local.
 
 ## Testare automata
 
@@ -82,15 +87,18 @@ Rezultat obtinut:
 
 A fost creat fisierul Jenkinsfile.
 
-Pipeline-ul contine urmatoarele etape:
+Pipeline-ul Jenkins contine urmatoarele etape:
 
 - Build
 - Create virtual environment
 - pylint - calitate cod
 - Unit Testing cu pytest
+- Build image
 - Deploy
 
-Testele unitare sunt rulate automat cu pytest.
+Pipeline-ul Jenkins a rulat cu succes.
+
+Toate etapele au status PASS.
 
 ## Docker
 
@@ -107,6 +115,8 @@ docker run --name masini-vlad-alexandru-container -p 5000:5000 masini-vlad-alexa
 Aplicatia rulata in container a fost accesata din browser la:
 
 http://127.0.0.1:5000/masini/mazda
+
+Aplicatia a functionat corect in container.
 
 ## Capturi de ecran
 
@@ -134,34 +144,44 @@ http://127.0.0.1:5000/masini/mazda
 
 ![Consola container](docs/images/container_logs.png)
 
+### Jenkins PASS
+
+![Jenkins PASS](docs/images/jenkins_pass.png)
+
+### Pull Request review
+
+![Pull Request review](docs/images/pull_request_review.png)
+
 ## Integrare
 
 Codul a fost adaugat pe branch-ul:
 
 dev_vlad_alexandru
 
-Urmatorul pas este crearea unui Pull Request catre:
+A fost creat Pull Request catre branch-ul:
 
 main_vlad_alexandru
 
+Pull Request-ul a primit raspuns/review.
+
 ## Review
 
-Pull Request-ul trebuie verificat de minim un coleg.
+Pull Request-ul a fost verificat de un coleg.
 
 ## Stadiu proiect
 
 - functionalitate adaugata
+- interfata HTML si CSS adaugata
 - teste unitare adaugate
+- testele pytest ruleaza cu succes
 - Jenkinsfile creat
+- Jenkins rulat cu succes
 - Dockerfile creat
+- imagine Docker construita
+- container Docker pornit
 - aplicatie rulata local
 - aplicatie rulata in container
 - capturi adaugate in README
+- Pull Request creat
+- review primit
 
-## Ce mai este de facut
-
-- commit si push pe branch-ul dev_vlad_alexandru
-- creare Pull Request catre main_vlad_alexandru
-- rulare Jenkins
-- atasare rezultat Jenkins in Pull Request
-- obtinere review de la un coleg
