@@ -9,4 +9,14 @@ app.register_blueprint(kia_bp)
 
 @app.route('/')
 def index():
-    return 'Masini'
+    return """
+    <html>
+    <body style="font-family:Arial, sans-serif; max-width:800px; margin:40px auto; padding:0 20px;">
+        <h1>Proiect SCC - 441D - Masini</h1>
+        <p>Alegeti o marca:</p>
+        <ul>
+            <li><a href="/masini/kia">Kia</a></li>
+        </ul>
+    </body>
+    </html>
+    """
