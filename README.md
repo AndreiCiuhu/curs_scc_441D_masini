@@ -66,11 +66,9 @@ Consola cu log-uri container:
 
 ## Integrare
 PR creat din `dev_aniculesei_mihnea` in `main_aniculesei_mihnea`.
-Status: in asteptare review.
+Status: Finalizat.
 
-## Pull Request-uri la care am facut review
-- In asteptare
+
 
 ## Ce mai este de facut
-- Astept review pentru PR
 - Integrare in main
