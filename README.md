@@ -53,7 +53,7 @@ Jenkinsfile
 requirement.txt
 masini.py
 README.md
-
+```
 ## Capturi de ecran
 
 ### Testare manuală Flask
