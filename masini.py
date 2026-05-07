@@ -1,8 +1,22 @@
 from flask import Flask
+
+from app.routes.test import test_bp
 from app.routes.bmw import bmw_bp
 
 app = Flask(__name__)
+app.register_blueprint(test_bp)
 app.register_blueprint(bmw_bp)
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+@app.route('/')
+def index():
+    return """
+    <html>
+    <body style="font-family:Arial, sans-serif; max-width:800px; margin:40px auto; padding:0 20px;">
+        <h1>Proiect SCC - 441D - Masini</h1>
+        <p>Alegeti o marca:</p>
+        <ul>
+            <li><a href="/masini/bmw">BMW</a></li>
+        </ul>
+    </body>
+    </html>
+    """
