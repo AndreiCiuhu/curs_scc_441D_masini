@@ -75,7 +75,7 @@ Aplicația a fost pornită local, iar rutele aferente funcționalității Bentle
 Comanda folosită pentru pornirea aplicației:
 
 ```bash
-PYTHONPATH=. python3 masini.py
+PYTHONPATH=app flask --app masini run
 ```
 
 În captura următoare se observă pornirea aplicației Flask local, pe portul `5000`.
