@@ -4,14 +4,14 @@ pipeline {
   stages {
     stage('Install dependencies') {
       steps {
-        sh 'python3 -m venv venv'
-        sh './venv/bin/pip install -r quickrequirements.txt'
+        sh 'chmod +x ./activeaza_venv_jenkins'
+        sh './activeaza_venv_jenkins'
       }
     }
 
     stage('Run tests') {
       steps {
-        sh 'pytest -q'
+        sh 'source activeaza_venv && pytest -q'
       }
     }
 
