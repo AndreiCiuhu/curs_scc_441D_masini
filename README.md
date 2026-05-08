@@ -458,13 +458,13 @@ main_poting_stefan
 Status:
 
 ```text
-Finalizat
+In desfasurare
 ```
 
 Review efectuat pentru un coleg:
 
 ```text
-Am efectuat review pentru Neacsu Roxana si Fierea Cosmin
+In desfasurare
 ```
 
 ---
