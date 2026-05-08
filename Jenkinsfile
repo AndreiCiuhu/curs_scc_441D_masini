@@ -1,7 +1,5 @@
 pipeline {
-	agent {
-		dockerfile { filename 'Dockerfile' }
-	}
+	agent any
 	stages {
 		stage('Install dependencies') {
 			steps {
@@ -10,7 +8,7 @@ pipeline {
 		}
 		stage('Run tests') {
 			steps {
-				sh 'PYTHONPATH=. python -m unittest discover -s app/test'
+				sh 'PYTHONPATH=. python3 -m unittest discover -s app/test'
 			}
 		}
 	}
