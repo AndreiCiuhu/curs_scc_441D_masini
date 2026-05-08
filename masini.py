@@ -7,6 +7,11 @@ print("Volkswagen")
 app= Flask(__name__)
 app.register_blueprint(test_bp)
 
-@app.route('/')
+@app.route("/", methods=["GET"])
 def index():
-    return 'Masini'
+    ret = ""
+
+    ret += "<h2>Aplicatie Flask - Marci auto</h2>"
+    ret += f"[<a href={url_for('volkswagen')}>Volkswagen</a>]"
+
+    return ret
