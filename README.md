@@ -45,3 +45,15 @@ Rute adaugate:
 -De pus screenshots
 -[cite_start]De facut review la un coleg [cite: 84,85]
 
+## Testare manuală
+![Pagina Ford](ford.png)
+![Ford Culoare](ford%20culoare.png)
+![Ford Descriere](ford%20descriere.png)
+
+## Testare cu Jenkins
+![Jenkins Pass](SUCCES.jpg)
+
+## Containerizare
+![Consola](consola.png)
+![Docker Container](docker%20container.png)
+![Docker Imagine](docker%20img.png)
