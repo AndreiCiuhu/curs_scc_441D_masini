@@ -55,6 +55,30 @@ def volkswagen():
 
 @app.route("/volkswagen/modele", methods=["GET"])
 def modele_volkswagen():
+    ret = ""
+
+    ret += "<!DOCTYPE html>"
+    ret += "<html>"
+    ret += "<head>"
+    ret += "<title>Modele Volkswagen</title>"
+    ret += "</head>"
+    ret += "<body>"
+
+    ret += f'<a href="{url_for("volkswagen")}">Înapoi la Volkswagen</a><br>'
+    ret += f'<a href="{url_for("index")}">Acasă</a><br><br>'
+
+    ret += "<h1>Modele Volkswagen</h1>"
+
+    ret += "<ul>"
+    ret += "<b>Golf</b> "
+    ret += "<b>Passat</b>"
+    ret += "<b>Polo</b>"
+    ret += "<b>Tiguan</b>"
+    ret += "<b>Touareg</b>"
+    ret += "</ul>"
+
+    ret += "</body>"
+    ret += "</html>"
     return ret
 
 @app.route("/volkswagen/motoare", methods=["GET"])
