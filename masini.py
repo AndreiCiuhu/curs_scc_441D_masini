@@ -28,9 +28,37 @@ def index():
 def volkswagen():
     ret = ""
 
-    ret += f"<a href={url_for('index')}>acasa</a><br><br>"
+    ret += "<!DOCTYPE html>"
+    ret += "<html>"
+    ret += "<head>"
+    ret += "<title>Volkswagen</title>"
+    ret += "</head>"
+    ret += "<body>"
 
-    ret += "<h2>Volkswagen</h2>"
+    ret += f'<a href="{url_for("index")}">Acasă</a><br><br>'
+
+    ret += "<h1>Volkswagen</h1>"
+
+    ret += "<h2>Alege o secțiune:</h2>"
+
+    ret += f'<a href="{url_for("modele_volkswagen")}">'
+    ret += "<button>Modele Volkswagen</button>"
+    ret += "</a> "
+
+    ret += f'<a href="{url_for("motoare_volkswagen")}">'
+    ret += "<button>Motoare Volkswagen</button>"
+    ret += "</a>"
+
+    ret += "</body>"
+    ret += "</html>"
+    return ret
+
+@app.route("/volkswagen/modele", methods=["GET"])
+def modele_volkswagen():
+    return ret
+
+@app.route("/volkswagen/motoare", methods=["GET"])
+def motoare_volkswagen():
     return ret
 
 if __name__ == "__main__":
