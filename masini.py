@@ -45,7 +45,6 @@ def audi():
 @app.route("/audi/model", methods=['GET'])
 def info_modele():
     modele = biblioteca_masini.gaseste_informatii_modele()
-    # Transformăm lista de modele într-un singur string cu linii noi
     lista_modele = "\n".join(modele)
     
     return f"""
@@ -80,7 +79,7 @@ def test():
     """
     Rulare 'unit tests'
     
-    Apelare pytest din aplicatia systest, cu ajutorul comenzii flask.
+    Apelare pytest
     
     """
     import pytest
