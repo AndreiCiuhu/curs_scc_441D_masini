@@ -8,7 +8,7 @@ pipeline {
 		}
 		stage('Run tests') {
 			steps {
-				sh 'PYTHONPATH=. python3 -m unittest discover -s app/test'
+				sh 'export PYTHONPATH=$PYTHONPATH:. && python3 -m unittest discover -s app/test'
 			}
 		}
 	}
