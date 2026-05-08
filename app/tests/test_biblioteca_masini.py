@@ -8,7 +8,7 @@ class TestBibliotecaMasini(unittest.TestCase):
         modele = gaseste_informatii_modele()
         self.assertIsInstance(modele, list)
         self.assertIn('A3', modele)
-        self.assertIn('Q5', modele)_____________ 
+        self.assertIn('Q5', modele)
 
     def test_gaseste_informatii_motor(self):
         motor = gaseste_informatii_motor()
