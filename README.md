@@ -223,9 +223,9 @@ OK
 
 ---
 
-# 14. Dependințe
+# 14. Dependente
 
-Dependințele proiectului sunt definite în fișierul:
+Dependentele proiectului sunt definite în fișierul:
 
 ```text
 requirement.txt
@@ -436,8 +436,8 @@ Pașii de integrare:
 | Pipeline Jenkins | Rulat cu succes |
 | README.md | Finalizat |
 | Capturi de ecran | Adăugate |
-| Pull Request | În lucru |
-| Review coleg | În lucru |
+| Pull Request | Finalizat |
+| Review coleg | Finalizat |
 
 ---
 
@@ -458,13 +458,13 @@ main_poting_stefan
 Status:
 
 ```text
-În așteptare review / aprobare.
+Finalizat
 ```
 
 Review efectuat pentru un coleg:
 
 ```text
-Urmează să fie completat după realizarea review-ului.
+Am efectuat review pentru Neacsu Roxana si Fierea Cosmin
 ```
 
 ---
