@@ -25,7 +25,7 @@ pipeline {
       steps {
         sh 'docker stop masini|| true'
         sh 'docker rm masini || true'
-        sh 'docker run -d -p 5000:5000 --name masini masini'
+        sh 'docker run -d -p 5011:5011 --name masini masini'
       }
     }
   }
