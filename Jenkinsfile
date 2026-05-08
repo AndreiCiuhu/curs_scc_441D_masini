@@ -22,9 +22,11 @@ pipeline {
     }
 
     stage('Deploy') {
-      steps {
-        sh 'docker run -d -p 5011:5011 --name masini masini'
-      }
+        steps {
+            sh 'docker stop masini || true'
+            sh 'docker rm masini || true'
+            sh 'docker run -d -p 5011:5011 --name masini masini'
+        }
     }
   }
 
