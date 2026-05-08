@@ -436,8 +436,8 @@ Pașii de integrare:
 | Pipeline Jenkins | Rulat cu succes |
 | README.md | Finalizat |
 | Capturi de ecran | Adăugate |
-| Pull Request | Finalizat |
-| Review coleg | Finalizat |
+| Pull Request | In Desfasurare |
+| Review coleg | In Desfasurare |
 
 ---
 
