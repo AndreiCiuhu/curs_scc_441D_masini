@@ -464,21 +464,13 @@ Finalizat
 Review efectuat pentru un coleg:
 
 ```text
-Am efectuat review pentru Neacsu Roxana si Fierea Cosmin
+Am efectuat review pentru PR Neacsu Roxana si PR Fierea Cosmin
 ```
 
----
-
-# 23. Ce mai este de făcut
-
-- crearea Pull Request-ului din `dev_poting_stefan` către `main_poting_stefan`;
-- obținerea unui review de la un coleg;
-- realizarea unui review pentru Pull Request-ul unui coleg;
-- integrarea modificărilor după aprobare;
-- actualizarea secțiunii de review, dacă este necesar.
-
----
-
-# 24. Concluzie
+# 23. Concluzie
 
 Funcționalitatea pentru marca **McLaren** a fost implementată, testată local, testată automat cu Jenkins și rulată într-un container Docker. Aplicația respectă structura proiectului de grup și poate fi integrată în branch-ul principal individual prin Pull Request.
+
+# 24. Ce mai este de făcut
+
+crearea Pull Request-ului din main_poting_stefan către main;
