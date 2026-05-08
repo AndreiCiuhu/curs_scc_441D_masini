@@ -11,7 +11,7 @@ pipeline {
 
     stage('Run tests') {
       steps {
-        sh '. .venv/bin/activate && PYTHONPATH=. pytest -q'
+        sh 'PYTHONPATH=. . .venv/bin/activate && pytest -q'
       }
     }
 
