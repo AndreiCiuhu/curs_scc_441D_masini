@@ -184,11 +184,11 @@ http://127.0.0.1:5000/masini/mclaren/descriere
 
 ![Pagina principală Flask](docs/screenshots/01_flask_home.png)
 
-## Pagina temei Mașini
+## Pagina Culoare Mașini
 
 ![Pagina Mașini](docs/screenshots/02_flask_masini.png)
 
-## Pagina McLaren
+## Pagina Descriere McLaren
 
 ![Pagina McLaren](docs/screenshots/03_flask_mclaren.png)
 

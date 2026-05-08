@@ -1,19 +1,12 @@
 from flask import Blueprint
+
 from app.lib.biblioteca_masini import culoare_mclaren, descriere_mclaren
 
-mclaren_bp = Blueprint("mclaren_bp", __name__)
+
+mclaren_bp = Blueprint("mclaren", __name__)
 
 
-@mclaren_bp.route("/masini")
-def masini():
-    return """
-    <h1>Tema proiectului: Masini</h1>
-    <p>Aceasta aplicatie face parte din proiectul grupei 441D pentru tema Masini.</p>
-    <p>Contributia mea individuala este reprezentata de marca McLaren.</p>
-    """
-
-
-@mclaren_bp.route("/masini/mclaren")
+@mclaren_bp.route("/masini/mclaren", methods=["GET"])
 def mclaren():
     return """
     <h1>McLaren</h1>
@@ -26,17 +19,19 @@ def mclaren():
     """
 
 
-@mclaren_bp.route("/masini/mclaren/culoare")
+@mclaren_bp.route("/masini/mclaren/culoare", methods=["GET"])
 def ruta_culoare_mclaren():
     return f"""
     <h1>Culoare McLaren</h1>
     <p>{culoare_mclaren()}</p>
+    <p><a href="/masini/mclaren">Inapoi la McLaren</a></p>
     """
 
 
-@mclaren_bp.route("/masini/mclaren/descriere")
+@mclaren_bp.route("/masini/mclaren/descriere", methods=["GET"])
 def ruta_descriere_mclaren():
     return f"""
     <h1>Descriere McLaren</h1>
     <p>{descriere_mclaren()}</p>
+    <p><a href="/masini/mclaren">Inapoi la McLaren</a></p>
     """
