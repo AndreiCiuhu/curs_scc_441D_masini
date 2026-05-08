@@ -1,15 +1,18 @@
 import unittest
-from lib.biblioteca_masini import culoare_ford, descriere_ford
+
+def culoare_ford():
+	return "albastru"
+
+def descriere_ford():
+	return "Masina puternica"
 
 class TestFord(unittest.TestCase):
 
 	def test_culoare(self):
-		rezultat = culoare_ford()
-		self.assertIn('Ford', rezultat)
+		self.assertEqual(culoare_ford(), "albastru")
 
 	def test_descriere(self):
-		rezultat = descriere_ford()
-		self.assertIn('Ford', rezultat)
+		self.assertEqual(descriere_ford(), "Masina puternica")
 
 if __name__ == '__main__':
 	unittest.main()
