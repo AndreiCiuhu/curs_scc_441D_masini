@@ -1,5 +1,7 @@
 from flask import Flask, url_for
 
+from app.lib.volkswagen import gaseste_modele_volkswagen, gaseste_motoare_volkswagen
+
 app= Flask(__name__)
 
 css = """
@@ -83,11 +85,11 @@ def modele_volkswagen():
     ret += "<h1>Modele Volkswagen</h1>"
 
     ret += "<ul>"
-    ret += "<b>Golf</b> "
-    ret += "<b>Passat</b>"
-    ret += "<b>Polo</b>"
-    ret += "<b>Tiguan</b>"
-    ret += "<b>Touareg</b>"
+
+    modele = gaseste_modele_volkswagen()
+    for model in modele:
+        ret += f"<b>{model}</b>"
+
     ret += "</ul>"
 
     ret += "</body>"
@@ -109,12 +111,13 @@ def motoare_volkswagen():
     ret += "<h1>Motoare Volkswagen</h1>"
 
     ret += "<ul>"
-    ret += "<b>1.0 TSI</b>"
-    ret += "<b>1.5 TSI</b>"
-    ret += "<b>2.0 TSI</b>"
-    ret += "<b>1.6 TDI</b>"
-    ret += "<b>2.0 TDI</b>"
+
+    motoare = gaseste_motoare_volkswagen()
+    for motor in motoare:
+        ret += f"<b>{motor}</b>"
+
     ret += "</ul>"
+
     ret += "</body>"
     ret += "</html>"
     return ret
