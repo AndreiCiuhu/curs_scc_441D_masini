@@ -15,3 +15,12 @@ def index():
     ret += f"[<a href={url_for('volkswagen')}>Volkswagen</a>]"
 
     return ret
+
+@app.route("/volkswagen", methods=["GET"])
+def volkswagen():
+    ret = ""
+
+    ret += f"<a href={url_for('index')}>acasa</a><br><br>"
+
+    ret += "<h2>Volkswagen</h2>"
+    return ret
