@@ -1,7 +1,5 @@
 from flask import Flask
 
-from routes.test import test_bp
-
 print("Volkswagen")
 
 app= Flask(__name__)
