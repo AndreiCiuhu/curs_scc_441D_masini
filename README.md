@@ -304,29 +304,48 @@ dev_neacsu_roxana -> main_neacsu_roxana
 
 ## 15. Pull Request si review
 
-Pull Request-ul urmeaza sa fie creat dupa verificarea finala a documentatiei.
+Pentru integrarea modificarilor realizate pe branch-ul de dezvoltare, a fost creat Pull Request-ul din branch-ul `dev_neacsu_roxana` catre branch-ul personal principal `main_neacsu_roxana`.
+
+- **Pull Request:** `#9`
+- **Sursa:** `dev_neacsu_roxana`
+- **Destinatie:** `main_neacsu_roxana`
+- **Status:** creat, verificat, aprobat si integrat cu succes
+- **Review primit de la:** `stefanpoting`
+- **Merge realizat de:** `CosminFierea`
+
+Pull Request-ul nu a avut conflicte cu branch-ul de baza, iar modificarile au fost integrate cu succes in `main_neacsu_roxana`.
 
 Status actual:
 
 ```text
-In asteptare creare Pull Request si review din partea unui coleg.
+PR #9 creat, aprobat si merged.
 ```
 
-Dupa crearea Pull Request-ului, va fi solicitat review de la un coleg, conform cerintelor proiectului.
-
 ---
 
-## 16. Ce mai este de facut
+## 16. Stadiu final si ce mai este de facut
 
-- Crearea Pull Request-ului din `dev_neacsu_roxana` in `main_neacsu_roxana`;
-- Solicitarea unui review de la un coleg;
-- Efectuarea unui review pentru Pull Request-ul unui coleg;
-- Integrarea modificarilor dupa aprobare;
-- Verificarea finala a README-ului dupa integrare.
+Pentru partea personala a proiectului, functionalitatea Rolls-Royce este implementata, testata, documentata si integrata in branch-ul `main_neacsu_roxana`.
 
----
+Activitati finalizate:
 
-## 17. Concluzie
+- implementarea functionalitatii Rolls-Royce;
+- adaugarea testelor unitare;
+- rularea testelor local si prin Jenkins;
+- containerizarea aplicatiei cu Docker;
+- rularea aplicatiei in container;
+- completarea README-ului cu documentatie si capturi;
+- crearea Pull Request-ului `#9`;
+- obtinerea review-ului de la un coleg;
+- integrarea modificarilor in `main_neacsu_roxana`;
+- efectuarea/verificarea review-ului pentru Pull Request-ul unui coleg.
+
+Activitati ramase, daca sunt solicitate in etapa finala a proiectului:
+
+- integrarea in branch-ul principal al grupei `main`, doar daca este solicitata de coordonator/profesor;
+- verificarea finala a documentatiei dupa integrarea in branch-ul principal al grupei.
+
+  ## 17. Concluzie
 
 Functionalitatea Rolls-Royce este implementata si testata.
 
@@ -338,6 +357,7 @@ Au fost realizate:
 - containerizarea cu Docker;
 - rularea aplicatiei in container;
 - pipeline Jenkins cu rezultat `SUCCESS`;
-- documentatia README cu capturi de ecran.
+- documentatia README cu capturi de ecran;
+- Pull Request-ul `#9`, aprobat si integrat in `main_neacsu_roxana`.
 
-Proiectul este pregatit pentru etapa de Pull Request si review.
+Proiectul este pregatit pentru etapa finala de verificare la nivelul grupei.
