@@ -11,8 +11,7 @@ pipeline {
 
     stage('Run tests') {
       steps {
-        sh 'source activeaza_venv'
-        sh 'pytest -q'
+        sh '. .venv/bin/activate && pytest -q'
       }
     }
 
@@ -31,7 +30,7 @@ pipeline {
     }
   }
 
-  post {
+   post {
     always {
       echo 'Pipeline finished.'
     }
@@ -41,5 +40,5 @@ pipeline {
     failure {
       echo 'Build failed.'
     }
-  }
+   }
 }
