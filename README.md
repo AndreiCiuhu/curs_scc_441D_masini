@@ -23,7 +23,6 @@ Rute adaugate:
 
 ## Testare manuala
 [cite_start]Aplicatia a fost pornita local si rutele au fost accesate din browser[cite: 79].
-*      *
 
 ## Testare cu Jenkins
 [cite_start]Testele au fost rulate cu Jenkins si au trecut[cite: 80].
@@ -38,7 +37,6 @@ Rute adaugate:
 
 ## Containerizare
 [cite_start]Am creat si rulat imaginea docker cu succes[cite: 83].
-*     *
 
 ## Ce mai este de facut
 -Astept review pentru PR
