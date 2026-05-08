@@ -83,6 +83,29 @@ def modele_volkswagen():
 
 @app.route("/volkswagen/motoare", methods=["GET"])
 def motoare_volkswagen():
+    ret = ""
+    ret += "<!DOCTYPE html>"
+    ret += "<html>"
+    ret += "<head>"
+    ret += "<title>Motoare Volkswagen</title>"
+    ret += "</head>"
+    ret += "<body>"
+
+    ret += f'<a href="{url_for("volkswagen")}">Înapoi la Volkswagen</a><br>'
+    ret += f'<a href="{url_for("index")}">Acasă</a><br><br>'
+
+    ret += "<h1>Motoare Volkswagen</h1>"
+
+    ret += "<ul>"
+    ret += "<b>1.0 TSI</b>"
+    ret += "<b>1.5 TSI</b>"
+    ret += "<b>2.0 TSI</b>"
+    ret += "<b>1.6 TDI</b>"
+    ret += "<b>2.0 TDI</b>"
+    ret += "</ul>"
+
+    ret += "</body>"
+    ret += "</html>"
     return ret
 
 if __name__ == "__main__":
