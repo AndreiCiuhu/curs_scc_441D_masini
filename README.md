@@ -87,7 +87,7 @@ Pentru fiecare generație sunt afișate:
 
 | Rută | Descriere |
 |---|---|
-| `/` | Redirecționează către pagina Porsche |
+| `/` | Default |
 | `/masini` | Redirecționează către pagina Porsche |
 | `/masini/porsche/` | Pagina principală Porsche |
 | `/masini/porsche/modele` | Pagina cu modelele Porsche |

@@ -1,4 +1,4 @@
-from flask import Flask, redirect
+from flask import Flask
 
 from routes.test import test_bp
 from routes.porsche import porsche_bp
@@ -11,13 +11,9 @@ app.register_blueprint(porsche_bp)
 
 @app.route("/")
 def index():
-    return redirect("/masini/porsche/")
-
-
-@app.route("/masini")
-def masini():
-    return redirect("/masini/porsche/")
+    return "Masini"
 
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
+
