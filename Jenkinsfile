@@ -3,12 +3,12 @@ pipeline {
 	stages {
 		stage('Install dependencies') {
 			steps {
-				sh 'pip3 install -r requirement.txt --break-system-packages'
+				sh 'pip3 install flask --break-system-packages'
 			}
 		}
 		stage('Run tests') {
 			steps {
-				sh 'export PYTHONPATH=$PYTHONPATH:. && python3 -m unittest discover -s app/test'
+				sh 'cd app && python3 -m unittest discover -s test'
 			}
 		}
 	}

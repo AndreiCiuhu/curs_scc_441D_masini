@@ -1,5 +1,5 @@
 import unittest
-from app.lib.biblioteca_masini import culoare_ford, descriere_ford
+from lib.biblioteca_masini import culoare_ford, descriere_ford
 
 class TestFord(unittest.TestCase):
 
