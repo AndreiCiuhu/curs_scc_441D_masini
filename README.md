@@ -89,3 +89,14 @@ python3 masini.py
 #### Loguri container Docker
 
 ![Loguri container](docs/images/container_logs.png)
+---
+
+## Capturi Jenkins
+
+### Pipeline Jenkins executat cu succes
+
+![Jenkins pipeline success](docs/images/jenkins_pipeline_success.png)
+
+### Console Output Jenkins
+
+![Jenkins console output](docs/images/jenkins_console_output.png)
