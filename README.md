@@ -1,4 +1,3 @@
-# curs_scc_441D_masini
 # Proiect SCC - Masini - Honda
 
 ## Informatii student
@@ -10,6 +9,7 @@
 - **Marca aleasa:** Honda
 - **Repository:** curs_scc_441D_masini
 - **Branch de dezvoltare:** dev_anton_darius
+- **Branch personal principal:** main_anton_darius
 
 ---
 
@@ -17,16 +17,18 @@
 
 Acest proiect face parte din activitatea de la disciplina **Servicii Cloud si Containerizare**.
 
-Scopul proiectului este dezvoltarea unei aplicatii web simple in Flask, folosind unelte utilizate frecvent in industria software, precum:
+Scopul proiectului este realizarea unei aplicatii web simple in Flask si utilizarea unor unelte folosite frecvent in dezvoltarea software, precum:
 
 - Git si GitHub;
+- branch-uri personale de dezvoltare;
 - Pull Request-uri;
 - Jenkins pentru testare automata;
 - Docker pentru containerizarea aplicatiei;
 - documentare prin fisierul README.md.
 
-Pentru grupa **441D**, tema proiectului este **Masini**.  
-In cadrul acestui proiect, am ales marca **Honda** si am adaugat trei pagini web dedicate acesteia.
+Pentru grupa **441D**, tema proiectului este **Masini**.
+
+In cadrul acestui proiect, am ales marca **Honda** si am implementat trei pagini web dedicate acesteia.
 
 ---
 
@@ -81,7 +83,9 @@ masini.py
 app/__init__.py
 app/lib/__init__.py
 app/lib/biblioteca_masini.py
+app/routes/__init__.py
 app/routes/honda.py
+app/test/__init__.py
 app/test/test_honda.py
 Dockerfile
 Jenkinsfile
@@ -124,7 +128,8 @@ curs_scc_441D_masini/
         ├── docker_logs.png
         ├── browser_honda_home.png
         ├── browser_honda_istoric.png
-        └── browser_honda_modele.png
+        ├── browser_honda_modele.png
+        └── jenkins_success.png
 ```
 
 ---
@@ -225,7 +230,7 @@ Branch folosit pentru Jenkins:
 dev_anton_darius
 ```
 
-Branch specifier recomandat in Jenkins:
+Branch specifier folosit in Jenkins:
 
 ```text
 */dev_anton_darius
@@ -237,11 +242,17 @@ Comanda rulata de Jenkins pentru teste:
 venv/bin/python -m unittest discover -s app/test -p "test_*.py"
 ```
 
-Status Jenkins:
+Rezultat Jenkins:
 
 ```text
-Jenkinsfile adaugat. Rularea in Jenkins urmeaza sa fie verificata.
+Ran 3 tests
+
+OK
+
+Finished: SUCCESS
 ```
+
+Pipeline-ul Jenkins a fost rulat cu succes, iar testele unitare au trecut.
 
 ---
 
@@ -321,6 +332,10 @@ Acest lucru confirma ca paginile Honda pot fi accesate din browser prin containe
 
 ![Loguri Docker](docs/images/docker_logs.png)
 
+### Jenkins - teste rulate cu succes
+
+![Jenkins Success](docs/images/jenkins_success.png)
+
 ---
 
 ## Git si GitHub
@@ -353,6 +368,23 @@ main_anton_darius
 
 ---
 
+## Pull Request
+
+Pull Request-ul va fi creat pentru integrarea modificarilor din branch-ul de dezvoltare in branch-ul personal principal.
+
+```text
+Sursa: dev_anton_darius
+Destinatie: main_anton_darius
+```
+
+Status:
+
+```text
+Urmeaza creare PR si review.
+```
+
+---
+
 ## Status proiect
 
 | Cerinta | Status |
@@ -363,14 +395,15 @@ main_anton_darius
 | Pagina Modele Honda | Finalizat |
 | Teste unitare | Finalizat |
 | Rulare locala | Finalizat |
+| Jenkinsfile | Finalizat |
+| Rulare Jenkins | Finalizat |
 | Dockerfile | Finalizat |
 | Imagine Docker | Finalizat |
 | Container Docker | Finalizat |
 | Accesare aplicatie din container | Finalizat |
 | Loguri Docker | Finalizat |
-| Jenkinsfile | Adaugat |
-| Rulare Jenkins | Urmeaza verificare |
-| Capturi de ecran | Adaugate |
+| Capturi de ecran | Finalizat |
+| Documentatie README | Finalizat |
 | Pull Request | Urmeaza |
 
 ---
@@ -382,3 +415,5 @@ In cadrul proiectului am implementat functionalitatea pentru marca **Honda** in 
 Au fost adaugate trei pagini web, teste unitare pentru verificarea rutelor, fisier Jenkinsfile pentru testare automata si Dockerfile pentru containerizarea aplicatiei.
 
 Aplicatia ruleaza local si in container Docker, iar paginile Honda pot fi accesate din browser.
+
+Testele unitare au fost rulate cu succes local si prin Jenkins.
