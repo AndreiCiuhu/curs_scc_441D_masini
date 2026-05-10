@@ -38,8 +38,6 @@ Funcționalitatea Bentley este compusă din:
 
 ---
 
----
-
 ## Structura implementării
 
 Structura proiectului pentru funcționalitatea **Bentley** este următoarea:
@@ -282,36 +280,51 @@ Integrarea se va realiza prin Pull Request către branch-ul personal principal:
 main_ispas_ariana
 ```
 
-Fluxul respectat este:
+Fluxul de integrare respectat este:
 
 ```text
 dev_ispas_ariana -> main_ispas_ariana
 ```
 
-Status:
+După crearea Pull Request-ului, acesta va fi trimis spre review colegului:
 
 ```text
-În așteptare review și aprobare.
+@AntonDarius921
+```
+
+Review-ul a fost stabilit în mod reciproc: colegul va verifica implementarea mea pentru funcționalitatea **Bentley**, iar eu voi verifica Pull Request-ul realizat de acesta.
+
+Status integrare:
+
+```text
+În așteptare creare Pull Request, review și aprobare.
 ```
 
 ---
 
-## 12. Pull Request-uri la care am făcut review
+## 12. Review-uri planificate și efectuate
 
-Momentan nu a fost completat review-ul pentru un Pull Request al unui coleg.
-
-După efectuarea review-ului, această secțiune va fi actualizată astfel:
+Pentru respectarea cerinței de lucru colaborativ, a fost stabilit un review reciproc cu utilizatorul GitHub:
 
 ```text
-PR #<id> — Review pentru funcționalitatea <elementului>.
+@AntonDarius921
 ```
 
----
+După crearea Pull Request-urilor, vor fi realizate următoarele acțiuni:
+
+- @AntonDarius921 va realiza review pentru Pull Request-ul meu: `dev_ispas_ariana -> main_ispas_ariana`;
+- eu voi realiza review pentru Pull Request-ul colegului @AntonDarius921;
+- după verificare și aprobare, modificările vor putea fi integrate în branch-ul personal principal.
+
+Status review:
+
+```text
+Review reciproc stabilit, în așteptare creare Pull Request-uri.
+```
+
 
 ## 13. Ce mai este de făcut
 
-- Crearea Pull Request-ului din `dev_ispas_ariana` în `main_ispas_ariana`;
-- Atașarea capturilor de ecran în descrierea Pull Request-ului;
 - Obținerea unui review de la un coleg;
 - Efectuarea unui review pentru Pull Request-ul unui coleg;
 - Integrarea modificărilor după aprobare.
