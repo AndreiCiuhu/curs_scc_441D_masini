@@ -6,7 +6,7 @@ def culoare_peugeot():
 def descriere_peugeot():
 	return "Masina puternica"
 
-class TestFord(unittest.TestCase):
+class TestPeugeot(unittest.TestCase):
 
 	def test_culoare(self):
 		self.assertEqual(culoare_peugeot(), "albastru")
