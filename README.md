@@ -257,13 +257,12 @@ Momentan nu au fost adăugate review-uri pentru Pull Request-urile colegilor.
 | Imagine Docker | Creată |
 | Container Docker | Pornit și testat |
 | Documentație README | Finalizată |
-| Pull Request | Urmează |
-| Review coleg | Urmează |
+| Pull Request `dev_dumbrava_teodor -> main_dumbrava_teodor` | Finalizat |
+| Review coleg | Finalizat |
+| Merge în `main_dumbrava_teodor` | Finalizat |
+| Pull Request `main_dumbrava_teodor -> main` | Urmează |
 
 ---
-
 ## Ce mai este de făcut
 
-- creare Pull Request din `dev_dumbrava_teodor` către `main_dumbrava_teodor`;
-- obținere review de la un coleg;
-- integrarea documentației în branch-ul principal al grupei, conform cerințelor proiectului.
+- creare Pull Request din `main_dumbrava_teodor` către `main`;
