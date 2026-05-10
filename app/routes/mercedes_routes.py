@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template
-from mercedes import descriere_mercedes, origine_mercedes, motorizare_mercedes
+from app.lib.biblioteca_masini import descriere_mercedes, origine_mercedes, motorizare_mercedes
 
 mercedes_bp = Blueprint("mercedes", __name__)
 
@@ -20,7 +20,7 @@ def mercedes_home():
 
 @mercedes_bp.route("/masini/mercedes/descriere")
 def mercedes_descriere():
-    return render_template(
+    return render_template(s
         "mercedes.html",
         titlu="Mercedes-Benz",
         subtitlu="Proiect Flask pentru tema Masini",
