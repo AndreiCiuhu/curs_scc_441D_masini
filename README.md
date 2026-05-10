@@ -38,6 +38,66 @@ Funcționalitatea Bentley este compusă din:
 
 ---
 
+---
+
+## Structura implementării
+
+Structura proiectului pentru funcționalitatea **Bentley** este următoarea:
+
+```text
+curs_scc_441D_masini/
+│
+├── masini.py
+├── Dockerfile
+├── Jenkinsfile
+├── README.md
+├── requirement.txt
+├── .gitignore
+│
+├── app/
+│   ├── routes/
+│   │   ├── __init__.py
+│   │   ├── test.py
+│   │   └── bentley.py
+│   │
+│   ├── lib/
+│   │   ├── __init__.py
+│   │   └── biblioteca_masini.py
+│   │
+│   └── test/
+│       ├── __init__.py
+│       └── test_biblioteca_masini.py
+│
+└── docs/
+    └── screenshots/
+        ├── 00_pornire_locala.png
+        ├── 01_testare_unitara.png
+        ├── 02_browser_bentley.png
+        ├── 03_browser_culoare.png
+        ├── 04_browser_descriere.png
+        ├── 05_docker_images.png
+        ├── 06_docker_ps.png
+        ├── 07_browser_container_bentley.png
+        ├── 08_docker_logs.png
+        ├── 09_jenkins_success.png
+        └── 10_blue_ocean_pipeline.png
+```
+
+Fișierul `biblioteca_masini.py` conține funcțiile specifice elementului Bentley, respectiv `culoare_bentley()` și `descriere_bentley()`.
+
+Fișierul `bentley.py` definește Blueprint-ul și rutele Flask aferente paginilor Bentley:
+
+- `/masini`
+- `/masini/bentley`
+- `/masini/bentley/culoare`
+- `/masini/bentley/descriere`
+
+Fișierul `test_biblioteca_masini.py` conține testele unitare pentru funcțiile implementate în bibliotecă.
+
+Folderul `docs/screenshots/` conține capturile utilizate în documentație pentru testarea manuală, testarea unitară, containerizarea cu Docker și rularea pipeline-ului Jenkins.
+
+---
+
 ## 4. Rute implementate
 
 | Rută | Descriere |
