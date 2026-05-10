@@ -183,10 +183,6 @@ sudo docker logs masini-fiat-container
 
 ## Capturi de ecran realizate
 
-Pentru documentarea proiectului au fost realizate capturi de ecran pentru:
-
-## Capturi de ecran realizate
-
 ### Testare locală cu pytest
 
 ![Testare locală pytest](docs/images/pytest_local.png)
@@ -210,8 +206,8 @@ Pentru documentarea proiectului au fost realizate capturi de ecran pentru:
 ### Jenkins build SUCCESS
 
 ![Jenkins success](docs/images/jenkins_success.png)
----
 
+---
 ## Integrare GitHub
 
 Codul a fost adăugat pe branch-ul personal de dezvoltare:
