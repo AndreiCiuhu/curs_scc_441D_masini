@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peugeot – Culoare</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #060b18;
+            color: #fff;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            padding: 22px 48px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,0.07);
+        }
+        .logo-text {
+            font-size: 1.6rem;
+            font-weight: 800;
+            letter-spacing: 0.3em;
+        }
+        nav a {
+            color: rgba(255,255,255,0.5);
+            text-decoration: none;
+            margin-left: 28px;
+            font-size: 0.85rem;
+            letter-spacing: 0.1em;
+            transition: color 0.2s;
+        }
+        nav a:hover, nav a.active { color: #fff; }
+        .hero {
+            text-align: center;
+            padding: 56px 48px 10px;
+        }
+        .hero .eyebrow {
+            font-size: 0.72rem;
+            letter-spacing: 0.25em;
+            color: rgba(255,255,255,0.38);
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+        }
+        .hero h1 span { color: #4a90e2; }
+        .accent-line {
+            width: 56px;
+            height: 3px;
+            background: #1565C0;
+            margin: 18px auto;
+            border-radius: 2px;
+        }
+        .swatches {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            padding: 32px 32px 20px;
+            flex-wrap: wrap;
+        }
+        .swatch {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+        .swatch-circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid rgba(255,255,255,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .swatch-circle.active {
+            border-color: #fff;
+            box-shadow: 0 0 0 3px rgba(255,255,255,0.25);
+            transform: scale(1.08);
+        }
+        .swatch-label {
+            font-size: 0.68rem;
+            color: rgba(255,255,255,0.42);
+            letter-spacing: 0.08em;
+        }
+        .color-info {
+            text-align: center;
+            padding: 16px 32px 52px;
+        }
+        .color-name {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            color: #4a90e2;
+            margin-bottom: 6px;
+        }
+        .color-hex {
+            font-size: 0.82rem;
+            color: rgba(255,255,255,0.32);
+            font-family: 'Courier New', monospace;
+            letter-spacing: 0.1em;
+        }
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            color: rgba(255,255,255,0.18);
+            font-size: 0.75rem;
+            letter-spacing: 0.06em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span class="logo-text">PEUGEOT</span>
+        <nav>
+            <a href="/masini">Masini</a>
+            <a href="/masini/peugeot">Peugeot</a>
+            <a href="/masini/peugeot/culoare" class="active">Culoare</a>
+            <a href="/masini/peugeot/descriere">Descriere</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="eyebrow">Configurator culori</div>
+        <h1>Peugeot 208 &mdash; <span>{{ culoare|capitalize }}</span></h1>
+        <div class="accent-line"></div>
+    </div>
+
+    <div class="swatches">
+        <div class="swatch">
+            <div class="swatch-circle active" style="background:#1565C0"></div>
+            <div class="swatch-label">Albastru</div>
+        </div>
+        <div class="swatch">
+            <div class="swatch-circle" style="background:#cc0000"></div>
+            <div class="swatch-label">Rosu</div>
+        </div>
+        <div class="swatch">
+            <div class="swatch-circle" style="background:#e8e8e8"></div>
+            <div class="swatch-label">Alb</div>
+        </div>
+        <div class="swatch">
+            <div class="swatch-circle" style="background:#1a1a1a;border-color:rgba(255,255,255,0.2)"></div>
+            <div class="swatch-label">Negru</div>
+        </div>
+        <div class="swatch">
+            <div class="swatch-circle" style="background:#767676"></div>
+            <div class="swatch-label">Gri</div>
+        </div>
+    </div>
+
+    <div class="color-info">
+        <div class="color-name">{{ culoare|capitalize }}</div>
+        <div class="color-hex">#1565C0 &mdash; Albastru Elixir</div>
+    </div>
+
+    <footer>© 2024 Peugeot Automobiles S.A.S. — Tous droits réservés</footer>
+</body>
+</html>
