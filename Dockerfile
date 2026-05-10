@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["python", "masini.py"]
+CMD ["flask", "--app", "masini.py", "run", "--host=0.0.0.0"]
