@@ -105,7 +105,7 @@ docker build -t masini-app .
 docker run -p 5000:5000 masini-app
 ```
 
-![Aplicație rulând în container](ss/app_running_container.png)
+![Aplicație ruland in container](ss/app_running_container.png)
 
 ![Loguri container Docker](ss/docker_logs.png)
 
