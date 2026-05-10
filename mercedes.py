@@ -10,3 +10,10 @@ def origine_mercedes():
         "Mercedes-Benz provine din Germania si este asociat cu orasul Stuttgart, "
         "un centru important al industriei auto germane."
     )
+
+
+def motorizare_mercedes():
+    return (
+        "Mercedes-Benz foloseste o gama variata de motorizari, de la motoare "
+        "termice pe benzina si diesel pana la sisteme hibride si electrice."
+    )
