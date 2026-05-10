@@ -1,10 +1,15 @@
 from flask import Flask
 
-from routes.test import test_bp
+from app.routes.test import test_bp
+from app.routes.honda import honda_bp
 
 app= Flask(__name__)
 app.register_blueprint(test_bp)
+app.register_blueprint(honda_bp)
 
 @app.route('/')
 def index():
     return 'Masini'
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)
