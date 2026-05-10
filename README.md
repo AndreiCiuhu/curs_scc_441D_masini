@@ -64,6 +64,8 @@ Rularea testelor local:
 pytest app/test/ -v
 ```
 
+![Rulare pytest local](ss/local_pytest.png)
+
 ### Testare cu Jenkins
 
 Jenkinsfile-ul configurat conține 3 stagii:
@@ -76,6 +78,8 @@ Jenkinsfile-ul configurat conține 3 stagii:
    ```
 
 La finalul pipeline-ului (`post { always }`), imaginea Docker este ștearsă automat.
+
+![Jenkins test passed](ss/jenkins_test_passed.png)
 
 ---
 
@@ -93,11 +97,17 @@ Aplicația este containerizată folosind **Docker**:
 docker build -t masini-app .
 ```
 
+![Build imagine Docker](ss/build_docker_image.png)
+
 ### Rularea aplicației
 
 ```bash
 docker run -p 5000:5000 masini-app
 ```
+
+![Aplicație rulând în container](ss/app_running_container.png)
+
+![Loguri container Docker](ss/docker_logs.png)
 
 ### Rularea testelor în container
 
