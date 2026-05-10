@@ -20,7 +20,7 @@ def mercedes_home():
 
 @mercedes_bp.route("/masini/mercedes/descriere")
 def mercedes_descriere():
-    return render_template(s
+    return render_template(
         "mercedes.html",
         titlu="Mercedes-Benz",
         subtitlu="Proiect Flask pentru tema Masini",
