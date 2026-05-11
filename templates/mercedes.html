@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ titlu }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='mercedes.css') }}">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-panel">
+            <p class="project-label">{{ subtitlu }}</p>
+            <h1>{{ titlu }}</h1>
+
+            <nav class="nav">
+                <a href="/masini/mercedes">Acasa</a>
+                <a href="/masini/mercedes/descriere">Descriere</a>
+                <a href="/masini/mercedes/origine">Origine</a>
+                <a href="/masini/mercedes/motorizare">Motorizare</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="card">
+            <span class="badge">Mercedes-Benz</span>
+            <h2>{{ sectiune }}</h2>
+            <p>{{ continut }}</p>
+        </section>
+
+        <section class="features">
+            <article>
+                <h3>Confort</h3>
+                <p>Modelele Mercedes-Benz sunt asociate cu interioare bine finisate si experienta de condus rafinata.</p>
+            </article>
+
+            <article>
+                <h3>Siguranta</h3>
+                <p>Marca foloseste sisteme moderne de asistenta si protectie pentru pasageri.</p>
+            </article>
+
+            <article>
+                <h3>Tehnologie</h3>
+                <p>Gama actuala include solutii digitale, motorizari eficiente si sisteme avansate de infotainment.</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
