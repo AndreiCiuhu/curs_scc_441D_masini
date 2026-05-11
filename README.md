@@ -423,7 +423,6 @@ main_fierea_cosmin
 ```
 
 ### Captură Pull Request
-
 ![Pull Request](docs/poze_readme/pull_request.png)
 
 ---
@@ -435,7 +434,8 @@ Momentan această secțiune va fi completată după ce ofer review unui coleg.
 Formatul folosit va fi:
 
 ```text
-PR #<număr> — Review pentru funcționalitatea <nume coleg / marcă>.
+PR #<9> — Review pentru funcționalitatea <Neacsu Roxana / Rolls-Royce>.
+PR #<10> — Review pentru funcționalitatea <Poting Stefan / McLaren>.
 ```
 
 ---
@@ -455,15 +455,11 @@ PR #<număr> — Review pentru funcționalitatea <nume coleg / marcă>.
 | Jenkinsfile | Finalizat |
 | Jenkins Pipeline | Rulat cu succes |
 | README.md | Completat |
-| Pull Request | Urmează să fie creat |
-| Review coleg | Urmează să fie primit |
+| Pull Request | Finalizat |
+| Review coleg | Finalizat |
 
 ---
 
 ## 19. Ce mai este de făcut
 
-- crearea Pull Request-ului din `dev_fierea_cosmin` către `main_fierea_cosmin`;
-- adăugarea capturii cu Pull Request-ul;
-- obținerea unui review de la un coleg;
-- efectuarea unui review pentru Pull Request-ul unui coleg;
-- integrarea modificărilor după aprobare.
+- crearea Pull Request-ului din `main_fierea_cosmin` către `main`;
