@@ -34,6 +34,12 @@ Aplicația are o interfață simplă, fără design încărcat, pentru ca inform
 
 ## 3. Funcționalități implementate
 
+Activarea mediului virtual Python
+
+```bash
+    source venv/bin/activate
+```
+
 Funcționalitățile pentru Porsche sunt definite în fișierul:
 
 `app/lib/biblioteca_masini.py`
@@ -278,25 +284,32 @@ Containerul `masini-porsche-container` a rulat cu succes și a expus aplicația 
 ![Container Docker pornit](docs/poze_readme/docker_ps.png)
 
 ---
-
-## 12. Accesarea aplicației din container
+##12. Accesarea aplicației din container și verificarea log-urilor
 
 După pornirea containerului, aplicația a fost accesată în browser la adresa:
 
-```text
-http://127.0.0.1:5000/masini/porsche/
+```bash
+    http://127.0.0.1:5000/masini/porsche/
 ```
 
-Au fost verificate și paginile:
+ Au fost verificate și paginile:
 
-```text
-http://127.0.0.1:5000/masini/porsche/modele
-http://127.0.0.1:5000/masini/porsche/istorie-911
+```bash
+    http://127.0.0.1:5000/masini/porsche/modele
+    http://127.0.0.1:5000/masini/porsche/istorie-911
 ```
 
 ### Captură aplicație rulată din container
 
 ![Aplicație rulată din container](docs/poze_readme/docker_browser.png)
+
+Pentru verificarea accesării aplicației din container s-a folosit comanda:
+
+```bash
+    sudo docker logs masini-porsche-container
+```
+
+Această comandă afișează log-urile containerului și arată cererile HTTP făcute din browser către aplicația Flask.
 
 ---
 
@@ -327,6 +340,18 @@ După oprire și ștergere, containerul nu mai apare în lista containerelor act
 # Jenkins
 
 ## 14. Testare automată cu Jenkins
+
+Pornirea Jenkins
+
+```bash
+    sudo systemctl start jenkins
+```
+
+Verificarea statusului Jenkins
+
+```bash
+    sudo systemctl status jenkins
+```
 
 Pentru automatizarea testării a fost creat fișierul:
 
@@ -398,7 +423,6 @@ main_fierea_cosmin
 ```
 
 ### Captură Pull Request
-
 ![Pull Request](docs/poze_readme/pull_request.png)
 
 ---
