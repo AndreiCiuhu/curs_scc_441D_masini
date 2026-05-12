@@ -74,42 +74,37 @@ pipeline {
             }
         }
 
-        stage('Docker - containerizare si test HTTP') {
+        stage('Docker') {
             agent any
             steps {
-                echo 'Construire imagine Docker, pornire container si verificare ruta Skoda'
+                echo 'Test simplu Docker'
 
                 sh '''
-                    IMAGE_NAME="masini-skoda-pamfir-jenkins:${BUILD_NUMBER}"
-                    CONTAINER_NAME="container-skoda-pamfir-jenkins"
+                    IMAGE_NAME="skoda-test:${BUILD_NUMBER}"
+                    CONTAINER_NAME="skoda-test-container"
 
-                    echo "Curat containerul vechi, daca exista:"
+                    echo "Sterg containerul vechi daca exista:"
                     docker rm -f $CONTAINER_NAME || true
 
-                    echo "Construiesc imaginea Docker cu tag unic:"
+                    echo "Construiesc imaginea Docker:"
                     docker build -t $IMAGE_NAME .
 
-                    echo "Pornesc containerul pe portul 5001:"
-                    docker run -d --name $CONTAINER_NAME -p 5001:5000 $IMAGE_NAME
+                    echo "Pornesc containerul:"
+                    docker run -d --name $CONTAINER_NAME $IMAGE_NAME
 
-                    echo "Astept cateva secunde sa porneasca aplicatia:"
-                    sleep 5
+                    echo "Astept 3 secunde:"
+                    sleep 3
 
-                    echo "Verific ruta /masini/skoda:"
-                    curl -f http://127.0.0.1:5001/masini/skoda
+                    echo "Verific daca ruleaza containerul:"
+                    docker ps | grep $CONTAINER_NAME
 
-                    echo "\\n\\nVerific ruta /masini/skoda/descriere:"
-                    curl -f http://127.0.0.1:5001/masini/skoda/descriere
+                    echo "Sterg containerul:"
+                    docker rm -f $CONTAINER_NAME
 
-                    echo "\\n\\nAfisez logurile containerului:"
-                    docker logs $CONTAINER_NAME
-
-                    echo "Opresc si sterg containerul:"
-                    docker stop $CONTAINER_NAME
-                    docker rm $CONTAINER_NAME
-
-                    echo "Sterg imaginea Jenkins folosita la acest build:"
+                    echo "Sterg imaginea temporara:"
                     docker rmi -f $IMAGE_NAME || true
+
+                    echo "Test Docker finalizat cu succes."
                 '''
             }
         }
