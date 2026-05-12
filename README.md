@@ -83,13 +83,13 @@ Aplicatia a fost containerizata si izolata cu succes. Se pot vizualiza mai jos d
 
 ## Integrare
 
-PR creat din branch-ul dev_Cubic_Vlad in main. Status: in asteptare review.
+PR creat din branch-ul dev_Cubic_Vlad in main. Status: Aprobat si integrat cu succes (Merged).
 
 ## Pull Request-uri la care am facut review
 
-* In asteptare (urmeaza verificarea unui PR de la un coleg).
+Am acordat review (Approve) pentru PR-ul unui coleg din grupa, respectand cerintele de verificare incrucisata.
 
 ## Ce mai este de facut
 
-* [ ] Astept review pentru PR
-* [ ] Integrare in main
+Proiectul este finalizat 100% si nu mai exista task-uri restante. 
+Toate etapele de dezvoltare, testare automata, containerizare și integrare a codului si a documentatiei prin PR au fost realizate si validate cu succes. Proiectul este gata pentru evaluare.
