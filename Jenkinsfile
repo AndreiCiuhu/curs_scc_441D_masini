@@ -74,10 +74,37 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
+        stage('Docker - containerizare si test HTTP') {
             agent any
             steps {
-                echo 'Deploy in lucru - aplicatia este pregatita pentru containerizare cu Docker.'
+                echo 'Construire imagine Docker, pornire container si verificare ruta Skoda'
+
+                sh '''
+                    echo "Sterg containerul vechi, daca exista:"
+                    docker rm -f container-skoda-pamfir-jenkins || true
+
+                    echo "Construiesc imaginea Docker:"
+                    docker build -t masini-skoda-pamfir .
+
+                    echo "Pornesc containerul pe portul 5001:"
+                    docker run -d --name container-skoda-pamfir-jenkins -p 5001:5000 masini-skoda-pamfir
+
+                    echo "Astept cateva secunde sa porneasca aplicatia:"
+                    sleep 5
+
+                    echo "Verific ruta /masini/skoda:"
+                    curl -f http://127.0.0.1:5001/masini/skoda
+
+                    echo "\\n\\nVerific ruta /masini/skoda/descriere:"
+                    curl -f http://127.0.0.1:5001/masini/skoda/descriere
+
+                    echo "\\n\\nAfisez logurile containerului:"
+                    docker logs container-skoda-pamfir-jenkins
+
+                    echo "Opresc si sterg containerul:"
+                    docker stop container-skoda-pamfir-jenkins
+                    docker rm container-skoda-pamfir-jenkins
+                '''
             }
         }
     }
