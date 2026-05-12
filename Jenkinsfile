@@ -61,6 +61,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
+                sh 'docker rm -f masini-container || true'
                 sh "docker run -d -p 5000:5000 --name masini-container mazda-imagine"
             }
         }
