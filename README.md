@@ -16,32 +16,32 @@ Rute adaugate:
 -/masini/ford/descriere - apeleaza descrierea
 
 ## Stadiul implementarii
--[x][cite_start]Cod [cite: 78]
--[x][cite_start]Teste [cite: 78]
--[x][cite_start]Jenkinsfile [cite: 78]
--[x][cite_start]Dockerfile [cite: 78]
+-Cod
+-Teste
+-Jenkinsfile
+-Dockerfile
 
 ## Testare manuala
-[cite_start]Aplicatia a fost pornita local si rutele au fost accesate din browser[cite: 79].
+Aplicatia a fost pornita local si rutele au fost accesate din browser.
 
 ## Testare cu Jenkins
-[cite_start]Testele au fost rulate cu Jenkins si au trecut[cite: 80].
+Testele au fost rulate cu Jenkins si au trecut.
 
 ## Fisier Jenkins
-[cite_start]Pipeline declarativ cu doua stage-uri: Install dependencies si Run tests[cite: 81].
+Pipeline declarativ cu doua stage-uri: Install dependencies si Run tests.
 
 
 ## Integrare
-[cite_start]PR creat pentru integrarea din dev_bolboaca_david in main_bolboaca_david[cite: 82].
-[cite_start]Status: in asteptare review[cite: 82].
+PR creat pentru integrarea din dev_bolboaca_david in main_bolboaca_david.
+Status: in asteptare review.
 
 ## Containerizare
-[cite_start]Am creat si rulat imaginea docker cu succes[cite: 83].
+Am creat si rulat imaginea docker cu succes.
 
 ## Ce mai este de facut
 -Astept review pentru PR
 -De pus screenshots
--[cite_start]De facut review la un coleg [cite: 84,85]
+-De facut review la un coleg
 
 ## Testare manuală
 ![Pagina Ford](ford.png)
