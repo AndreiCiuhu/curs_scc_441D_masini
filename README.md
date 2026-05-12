@@ -4,7 +4,7 @@
 # Tema masini aleasa: Ford
 
 ## Functionalitate adaugata
-[citee_start]Functionalitate pentru marca Ford in cadrul temei Masini[cite: 77].
+Functionalitate pentru marca Ford in cadrul temei Masini
 Fisiere adaugate:
 -app/lib/biblioteca_masini.py - functiile descriere_ford() si culoare_ford()
 -app/routes/ford.py - blueprint cu rutele Ford
