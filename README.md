@@ -68,7 +68,7 @@ Aplicatia a fost containerizata si izolata cu succes. Se pot vizualiza mai jos d
 
 <details>
   <summary>Vezi captura de ecran: Browser accesand aplicatia din container</summary>
-  <img src="assets/ss4.png" alt="Browser acces">
+  <img src="assets/ss_final.png" alt="Browser acces">
 </details>
 
 <details>
