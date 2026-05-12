@@ -80,14 +80,17 @@ pipeline {
                 echo 'Construire imagine Docker, pornire container si verificare ruta Skoda'
 
                 sh '''
-                    echo "Sterg containerul vechi, daca exista:"
-                    docker rm -f container-skoda-pamfir-jenkins || true
+                    IMAGE_NAME="masini-skoda-pamfir-jenkins:${BUILD_NUMBER}"
+                    CONTAINER_NAME="container-skoda-pamfir-jenkins"
 
-                    echo "Construiesc imaginea Docker:"
-                    docker build -t masini-skoda-pamfir .
+                    echo "Curat containerul vechi, daca exista:"
+                    docker rm -f $CONTAINER_NAME || true
+
+                    echo "Construiesc imaginea Docker cu tag unic:"
+                    docker build -t $IMAGE_NAME .
 
                     echo "Pornesc containerul pe portul 5001:"
-                    docker run -d --name container-skoda-pamfir-jenkins -p 5001:5000 masini-skoda-pamfir
+                    docker run -d --name $CONTAINER_NAME -p 5001:5000 $IMAGE_NAME
 
                     echo "Astept cateva secunde sa porneasca aplicatia:"
                     sleep 5
@@ -99,11 +102,14 @@ pipeline {
                     curl -f http://127.0.0.1:5001/masini/skoda/descriere
 
                     echo "\\n\\nAfisez logurile containerului:"
-                    docker logs container-skoda-pamfir-jenkins
+                    docker logs $CONTAINER_NAME
 
                     echo "Opresc si sterg containerul:"
-                    docker stop container-skoda-pamfir-jenkins
-                    docker rm container-skoda-pamfir-jenkins
+                    docker stop $CONTAINER_NAME
+                    docker rm $CONTAINER_NAME
+
+                    echo "Sterg imaginea Jenkins folosita la acest build:"
+                    docker rmi -f $IMAGE_NAME || true
                 '''
             }
         }
