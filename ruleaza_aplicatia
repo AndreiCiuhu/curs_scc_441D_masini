@@ -1,0 +1,4 @@
+#!/bin/bash
+#LINUX
+export FLASK_APP=masini
+flask run -p 5011 --reload
