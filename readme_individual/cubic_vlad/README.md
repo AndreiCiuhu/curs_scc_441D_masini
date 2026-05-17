@@ -32,7 +32,7 @@ Aplicatia a fost pornita in mediul de dezvoltare local. Toate rutele au fost acc
 
 <details>
   <summary>Vezi captura de ecran: Testare manuala</summary>
-  <img src="documentatie_generata/cubic_vlad/assets/ss7.png" alt="Testare manuala">
+  <img src="readme_individual/cubic_vlad/assets/ss7.png" alt="Testare manuala">
 </details>
 
 ##### Testare cu Jenkins
@@ -40,7 +40,7 @@ Automatizarea testarii a fost confirmata prin executia cu succes a pipeline-ului
 
 <details>
   <summary>Vezi captura de ecran: Executie Jenkins</summary>
-  <img src="documentatie_generata/cubic_vlad/assets/ss8.png" alt="Jenkins Pipeline">
+  <img src="readme_individual/cubic_vlad/assets/ss8.png" alt="Jenkins Pipeline">
 </details>
 
 #### Fisier Jenkins
@@ -57,28 +57,28 @@ Aplicatia a fost containerizata si izolata cu succes. Se pot vizualiza mai jos d
 
 <details>
   <summary>Vezi captura de ecran: Imagine creata</summary>
-  <img src="documentatie_generata/cubic_vlad/assets/ss1.png" alt="Imagine creata">
+  <img src="readme_individual/cubic_vlad/assets/ss1.png" alt="Imagine creata">
 </details>
 
 <details>
   <summary>Vezi captura de ecran: Container creat si functional</summary>
-  <img src="documentatie_generata/cubic_vlad/assets/ss2.png" alt="Pornire container">
-  <img src="documentatie_generata/cubic_vlad/assets/SS3.png" alt="Status container">
+  <img src="readme_individual/cubic_vlad/assets/ss2.png" alt="Pornire container">
+  <img src="readme_individual/cubic_vlad/assets/SS3.png" alt="Status container">
 </details>
 
 <details>
   <summary>Vezi captura de ecran: Browser accesand aplicatia din container</summary>
-  <img src="documentatie_generata/cubic_vlad/assets/ss_final.png" alt="Browser acces">
+  <img src="readme_individual/cubic_vlad/assets/ss_final.png" alt="Browser acces">
 </details>
 
 <details>
   <summary>Vezi captura de ecran: Consola cu log-uri</summary>
-  <img src="documentatie_generata/cubic_vlad/assets/ss5.png" alt="Log-uri container">
+  <img src="readme_individual/cubic_vlad/assets/ss5.png" alt="Log-uri container">
 </details>
 
 <details>
   <summary>Vezi captura de ecran: Curatare resurse dupa testare</summary>
-  <img src="documentatie_generata/cubic_vlad/assets/ss6.png" alt="Curatare resurse">
+  <img src="readme_individual/cubic_vlad/assets/ss6.png" alt="Curatare resurse">
 </details>
 
 #### Integrare

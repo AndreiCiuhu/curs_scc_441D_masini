@@ -127,23 +127,23 @@ Pipeline-ul s-a finalizat cu succes, ceea ce confirmă că proiectul este config
 
 ##### Teste automate rulate cu succes
 
-![Teste automate](documentatie_generata/pamfir_cosmin/docs/poza1.jpeg)
+![Teste automate](readme_individual/pamfir_cosmin/docs/poza1.jpeg)
 
 ##### Container Docker pornit
 
-![Docker ps](documentatie_generata/pamfir_cosmin/docs/poza2.jpeg)
+![Docker ps](readme_individual/pamfir_cosmin/docs/poza2.jpeg)
 
 ##### Build și rulare Docker
 
-![Docker build si run](documentatie_generata/pamfir_cosmin/docs/poza3.jpeg)
+![Docker build si run](readme_individual/pamfir_cosmin/docs/poza3.jpeg)
 
 ##### Consolă Jenkins
 
-![Jenkins console](documentatie_generata/pamfir_cosmin/docs/Jenkins1.png)
+![Jenkins console](readme_individual/pamfir_cosmin/docs/Jenkins1.png)
 
 ##### Pipeline Jenkins finalizat cu succes
 
-![Jenkins pipeline](documentatie_generata/pamfir_cosmin/docs/Jenkins2.png)
+![Jenkins pipeline](readme_individual/pamfir_cosmin/docs/Jenkins2.png)
 
 #### Concluzie
 

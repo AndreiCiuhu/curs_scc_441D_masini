@@ -150,7 +150,7 @@ Testele verifică:
 
 ##### Captură testare locală
 
-![Teste unitare Porsche](documentatie_generata/fierea_cosmin/docs/poze_readme/teste_unitare.png)
+![Teste unitare Porsche](readme_individual/fierea_cosmin/docs/poze_readme/teste_unitare.png)
 
 ---
 
@@ -174,15 +174,15 @@ http://127.0.0.1:5000/masini/porsche/istorie-911
 
 ##### Pagina principală Porsche
 
-![Pagina Porsche](documentatie_generata/fierea_cosmin/docs/poze_readme/pagina_porsche.png)
+![Pagina Porsche](readme_individual/fierea_cosmin/docs/poze_readme/pagina_porsche.png)
 
 ##### Pagina Modele Porsche
 
-![Pagina Modele Porsche](documentatie_generata/fierea_cosmin/docs/poze_readme/pagina_modele_porsche.png)
+![Pagina Modele Porsche](readme_individual/fierea_cosmin/docs/poze_readme/pagina_modele_porsche.png)
 
 ##### Pagina Istoria Porsche 911
 
-![Pagina Istoria Porsche 911](documentatie_generata/fierea_cosmin/docs/poze_readme/pagina_istorie_911.png)
+![Pagina Istoria Porsche 911](readme_individual/fierea_cosmin/docs/poze_readme/pagina_istorie_911.png)
 
 ---
 
@@ -226,11 +226,11 @@ sudo docker build -t masini-porsche-fierea .
 
 ##### Începerea construirii imaginii Docker
 
-![Docker build start](documentatie_generata/fierea_cosmin/docs/poze_readme/docker_build_start.png)
+![Docker build start](readme_individual/fierea_cosmin/docs/poze_readme/docker_build_start.png)
 
 ##### Imagine Docker construită cu succes
 
-![Docker build success](documentatie_generata/fierea_cosmin/docs/poze_readme/docker_build_success.png)
+![Docker build success](readme_individual/fierea_cosmin/docs/poze_readme/docker_build_success.png)
 
 La finalul procesului apare mesajul:
 
@@ -259,7 +259,7 @@ masini-porsche-fierea
 
 ##### Captură imagine Docker
 
-![Imagine Docker](documentatie_generata/fierea_cosmin/docs/poze_readme/docker_images.png)
+![Imagine Docker](readme_individual/fierea_cosmin/docs/poze_readme/docker_images.png)
 
 ---
 
@@ -281,7 +281,7 @@ Containerul `masini-porsche-container` a rulat cu succes și a expus aplicația 
 
 ##### Captură container pornit
 
-![Container Docker pornit](documentatie_generata/fierea_cosmin/docs/poze_readme/docker_ps.png)
+![Container Docker pornit](readme_individual/fierea_cosmin/docs/poze_readme/docker_ps.png)
 
 ---
 ####12. Accesarea aplicației din container și verificarea log-urilor
@@ -301,7 +301,7 @@ După pornirea containerului, aplicația a fost accesată în browser la adresa:
 
 ##### Captură aplicație rulată din container
 
-![Aplicație rulată din container](documentatie_generata/fierea_cosmin/docs/poze_readme/docker_browser.png)
+![Aplicație rulată din container](readme_individual/fierea_cosmin/docs/poze_readme/docker_browser.png)
 
 Pentru verificarea accesării aplicației din container s-a folosit comanda:
 
@@ -374,11 +374,11 @@ Pipeline-ul a rulat cu succes, iar toate etapele au fost finalizate fără erori
 
 ##### Captură Jenkins
 
-![Jenkins SUCCESS](documentatie_generata/fierea_cosmin/docs/poze_readme/jenkins_success.png)
+![Jenkins SUCCESS](readme_individual/fierea_cosmin/docs/poze_readme/jenkins_success.png)
 
 ##### Pipeline Jenkins
 
-![Jenkins Pipeline](documentatie_generata/fierea_cosmin/docs/poze_readme/jenkins_pipeline.png)
+![Jenkins Pipeline](readme_individual/fierea_cosmin/docs/poze_readme/jenkins_pipeline.png)
 
 ---
 
@@ -423,7 +423,7 @@ main_fierea_cosmin
 ```
 
 ##### Captură Pull Request
-![Pull Request](documentatie_generata/fierea_cosmin/docs/poze_readme/pull_request.png)
+![Pull Request](readme_individual/fierea_cosmin/docs/poze_readme/pull_request.png)
 
 ---
 

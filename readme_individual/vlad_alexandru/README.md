@@ -194,15 +194,15 @@ Aplicatia are titlul MAZDA si trei butoane:
 
 ##### Pagina Acasa
 
-![Pagina Acasa](documentatie_generata/vlad_alexandru/docs/images/browser_home.png)
+![Pagina Acasa](readme_individual/vlad_alexandru/docs/images/browser_home.png)
 
 ##### Pagina Istoric
 
-![Pagina Istoric](documentatie_generata/vlad_alexandru/docs/images/browser_istoric.png)
+![Pagina Istoric](readme_individual/vlad_alexandru/docs/images/browser_istoric.png)
 
 ##### Pagina Motorizare
 
-![Pagina Motorizare](documentatie_generata/vlad_alexandru/docs/images/browser_motorizare.png)
+![Pagina Motorizare](readme_individual/vlad_alexandru/docs/images/browser_motorizare.png)
 
 #### 5. Mediu virtual Python
 
@@ -268,15 +268,15 @@ Aplicatia a functionat corect local.
 
 ##### Dovada rulare pagina Acasa
 
-![Pagina Acasa](documentatie_generata/vlad_alexandru/docs/images/browser_home.png)
+![Pagina Acasa](readme_individual/vlad_alexandru/docs/images/browser_home.png)
 
 ##### Dovada rulare pagina Istoric
 
-![Pagina Istoric](documentatie_generata/vlad_alexandru/docs/images/browser_istoric.png)
+![Pagina Istoric](readme_individual/vlad_alexandru/docs/images/browser_istoric.png)
 
 ##### Dovada rulare pagina Motorizare
 
-![Pagina Motorizare](documentatie_generata/vlad_alexandru/docs/images/browser_motorizare.png)
+![Pagina Motorizare](readme_individual/vlad_alexandru/docs/images/browser_motorizare.png)
 
 #### 7. Testare automata cu pytest
 
@@ -378,7 +378,7 @@ Toate etapele au status PASS.
 
 ##### Dovada Jenkins PASS
 
-![Jenkins PASS](documentatie_generata/vlad_alexandru/docs/images/jenkins_pass.png)
+![Jenkins PASS](readme_individual/vlad_alexandru/docs/images/jenkins_pass.png)
 
 #### 10. Docker si containerizare
 
@@ -436,7 +436,7 @@ masini-vlad-alexandru
 
 ##### Dovada imagine Docker creata
 
-![Imagine Docker](documentatie_generata/vlad_alexandru/docs/images/docker_images.png)
+![Imagine Docker](readme_individual/vlad_alexandru/docs/images/docker_images.png)
 
 #### 12. Container Docker
 
@@ -475,7 +475,7 @@ docker ps
 
 ##### Dovada container Docker pornit
 
-![Container Docker](documentatie_generata/vlad_alexandru/docs/images/docker_ps.png)
+![Container Docker](readme_individual/vlad_alexandru/docs/images/docker_ps.png)
 
 #### 13. Consola containerului
 
@@ -493,7 +493,7 @@ Acest lucru confirma ca browserul a accesat aplicatia rulata in container.
 
 ##### Dovada consola containerului
 
-![Consola container](documentatie_generata/vlad_alexandru/docs/images/container_logs.png)
+![Consola container](readme_individual/vlad_alexandru/docs/images/container_logs.png)
 
 #### 14. .dockerignore
 
@@ -529,7 +529,7 @@ Review-ul confirma ca modificarile au fost verificate de un coleg inainte de int
 
 ##### Dovada Pull Request review
 
-![Pull Request review](documentatie_generata/vlad_alexandru/docs/images/pull_request_review.png)
+![Pull Request review](readme_individual/vlad_alexandru/docs/images/pull_request_review.png)
 
 #### 16. Comenzi utile pentru prezentare
 

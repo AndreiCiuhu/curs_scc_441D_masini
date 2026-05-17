@@ -494,31 +494,31 @@ Acest lucru confirma ca paginile Honda pot fi accesate din browser prin containe
 
 ##### Imagine Docker
 
-![Imagine Docker](documentatie_generata/anton_darius/docs/images/docker_images.png)
+![Imagine Docker](readme_individual/anton_darius/docs/images/docker_images.png)
 
 ##### Container Docker pornit
 
-![Container Docker](documentatie_generata/anton_darius/docs/images/docker_ps.png)
+![Container Docker](readme_individual/anton_darius/docs/images/docker_ps.png)
 
 ##### Pagina principala Honda
 
-![Pagina Honda](documentatie_generata/anton_darius/docs/images/browser_honda_home.png)
+![Pagina Honda](readme_individual/anton_darius/docs/images/browser_honda_home.png)
 
 ##### Pagina Istoric Honda
 
-![Istoric Honda](documentatie_generata/anton_darius/docs/images/browser_honda_istoric.png)
+![Istoric Honda](readme_individual/anton_darius/docs/images/browser_honda_istoric.png)
 
 ##### Pagina Modele Honda
 
-![Modele Honda](documentatie_generata/anton_darius/docs/images/browser_honda_modele.png)
+![Modele Honda](readme_individual/anton_darius/docs/images/browser_honda_modele.png)
 
 ##### Loguri Docker
 
-![Loguri Docker](documentatie_generata/anton_darius/docs/images/docker_logs.png)
+![Loguri Docker](readme_individual/anton_darius/docs/images/docker_logs.png)
 
 ##### Jenkins - teste rulate cu succes
 
-![Jenkins Success](documentatie_generata/anton_darius/docs/images/jenkins_success.png)
+![Jenkins Success](readme_individual/anton_darius/docs/images/jenkins_success.png)
 
 ---
 
@@ -746,7 +746,7 @@ PYTHONPATH=app flask --app masini run
 
 În captura următoare se observă pornirea aplicației Flask local, pe portul `5000`.
 
-<img src="documentatie_generata/baroiu_silvian/docs/screenshots/00_pornire_locala.png" width="900">
+<img src="readme_individual/baroiu_silvian/docs/screenshots/00_pornire_locala.png" width="900">
 
 Rutele testate manual au fost:
 
@@ -756,13 +756,13 @@ Rutele testate manual au fost:
 ##### Pagina Toyota 
 Pagina `/masini/toyota` afișează elementul ales și butoanele către informațiile specifice.
 
-<img src="documentatie_generata/baroiu_silvian/docs/screenshots/02_browser_toyota.png" width="900">
+<img src="readme_individual/baroiu_silvian/docs/screenshots/02_browser_toyota.png" width="900">
 
 ##### Pagina „Model Toyota”
 
 Pagina `/masini/Toyota/gr_supra` afișează rezultatul funcției `descriere_Toyota()`.
 
-<img src="documentatie_generata/baroiu_silvian/docs/screenshots/03_browser_model.png" width="900">
+<img src="readme_individual/baroiu_silvian/docs/screenshots/03_browser_model.png" width="900">
 
 
 ---
@@ -783,7 +783,7 @@ PYTHONPATH=. python -m unittest discover -s app/test
 
 Rezultatul obținut a fost `OK`, fiind rulate două teste unitare pentru funcțiile Toyota.
 
-<img src="documentatie_generata/baroiu_silvian/docs/screenshots/01_testare_unitara.png" width="900">
+<img src="readme_individual/baroiu_silvian/docs/screenshots/01_testare_unitara.png" width="900">
 
 ---
 
@@ -799,7 +799,7 @@ sudo docker build -t masini-app .
 
 Imaginea Docker `masini-app` a fost creată cu succes și apare în lista imaginilor locale.
 
-<img src="documentatie_generata/baroiu_silvian/docs/screenshots/05_docker_images.png" width="900">
+<img src="readme_individual/baroiu_silvian/docs/screenshots/05_docker_images.png" width="900">
 
 Containerul a fost pornit astfel:
 
@@ -809,7 +809,7 @@ sudo docker run -d -p 5000:5000 --name masini-container masini-app
 
 Containerul `masini-container` a fost pornit și a expus aplicația pe portul `5000`.
 
-<img src="documentatie_generata/baroiu_silvian/docs/screenshots/06_docker_ps.png" width="900">
+<img src="readme_individual/baroiu_silvian/docs/screenshots/06_docker_ps.png" width="900">
 
 Aplicația rulată în container a fost accesată din browser la ruta:
 
@@ -817,11 +817,11 @@ Aplicația rulată în container a fost accesată din browser la ruta:
 http://127.0.0.1:5000/masini/Toyota
 ```
 
-<img src="documentatie_generata/baroiu_silvian/docs/screenshots/07_browser_container_toyota.png" width="900">
+<img src="readme_individual/baroiu_silvian/docs/screenshots/07_browser_container_toyota.png" width="900">
 
 Logurile containerului confirmă cererile HTTP cu status 200 pentru rutele Toyota.
 
-<img src="documentatie_generata/baroiu_silvian/docs/screenshots/08_docker_logs.png" width="900">
+<img src="readme_individual/baroiu_silvian/docs/screenshots/08_docker_logs.png" width="900">
 
 ---
 
@@ -835,7 +835,7 @@ dev_baroiu_silvian
 
 Toate etapele au fost finalizate cu succes, rezultatul final fiind SUCCESS.
 
-<img src="documentatie_generata/baroiu_silvian/docs/screenshots/09_jenkins_success.png" width="900">
+<img src="readme_individual/baroiu_silvian/docs/screenshots/09_jenkins_success.png" width="900">
 
 ##### Vizualizare pipeline în Blue Ocean
 
@@ -846,7 +846,7 @@ Toate etapele au fost finalizate cu succes, rezultatul final fiind SUCCESS.
 - `Build image`
 - `Deploy`
 
-<img src="documentatie_generata/baroiu_silvian/docs/screenshots/10_blue_ocean_pipeline.png" width="900">
+<img src="readme_individual/baroiu_silvian/docs/screenshots/10_blue_ocean_pipeline.png" width="900">
 
 ---
 
@@ -955,17 +955,17 @@ Am creat si rulat imaginea docker cu succes.
 -De facut review la un coleg
 
 #### Testare manuală
-![Pagina Ford](documentatie_generata/bolboaca_david/ford.png)
-![Ford Culoare](documentatie_generata/bolboaca_david/ford%20culoare.png)
-![Ford Descriere](documentatie_generata/bolboaca_david/ford%20descriere.png)
+![Pagina Ford](readme_individual/bolboaca_david/ford.png)
+![Ford Culoare](readme_individual/bolboaca_david/ford%20culoare.png)
+![Ford Descriere](readme_individual/bolboaca_david/ford%20descriere.png)
 
 #### Testare cu Jenkins
-![Jenkins Pass](documentatie_generata/bolboaca_david/SUCCES.jpg)
+![Jenkins Pass](readme_individual/bolboaca_david/SUCCES.jpg)
 
 #### Containerizare
-![Consola](documentatie_generata/bolboaca_david/consola.png)
-![Docker Container](documentatie_generata/bolboaca_david/docker%20container.png)
-![Docker Imagine](documentatie_generata/bolboaca_david/docker%20img.png)
+![Consola](readme_individual/bolboaca_david/consola.png)
+![Docker Container](readme_individual/bolboaca_david/docker%20container.png)
+![Docker Imagine](readme_individual/bolboaca_david/docker%20img.png)
 #### Stadiul proiectelor grupei
 
 | Element | Dezvoltator | Implementare | Testare | Integrare |
@@ -1166,19 +1166,19 @@ http://127.0.0.1:5011
 
 ##### Capturi verificare manuală
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_1.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_1.png)
 <p align="center">Figura 7.1 Rularea comenzilor în terminalul local</p>
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_2.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_2.png)
 <p align="center">Figura 7.2 Ruta principală</p>
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_3.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_3.png)
 <p align="center">Figura 7.3 Ruta /audi</p>
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_4.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_4.png)
 <p align="center">Figura 7.4 Ruta /audi/model</p>
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_5.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_5.png)
 <p align="center">Figura 7.5 Ruta /audi/motoare</p>
 
 ---
@@ -1207,7 +1207,7 @@ PASS
 
 Testele verifică dacă funcțiile returnează datele așteptate pentru modelele și motorizările Audi.
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_6.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_6.png)
 <p align="center">Figura 8.1 Testarea locală cu pytest</p>
 
 ---
@@ -1231,19 +1231,19 @@ Fișierul Jenkins este folosit pentru validarea automată a codului adăugat pe 
 
 ##### Capturi Jenkins
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_7.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_7.png)
 <p align="center">Figura 9.1 Pipeline-ul Jenkins configurat</p>
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_8.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_8.png)
 <p align="center">Figura 9.2 Instalarea dependențelor</p>
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_9.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_9.png)
 <p align="center">Figura 9.3 Rularea testelor in Jenkins</p>
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_10.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_10.png)
 <p align="center">Figura 9.4 Construirea imaginii Docker</p>
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_11.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_11.png)
 <p align="center">Figura 9.5 Pornire container</p>
 
 ---
@@ -1307,16 +1307,16 @@ http://127.0.0.1:5011
 
 ##### Capturi containerizare
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_12.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_12.png)
 <p align="center">Figura 10.1 Imaginea Docker</p>
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_13.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_13.png)
 <p align="center">Figura 10.2 Creare și pornire container</p>
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_14.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_14.png)
 <p align="center">Figura 10.3 Mesajele afișate în consola containerului</p>
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_15.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_15.png)
 <p align="center">Figura 10.4 Accesarea aplicației rulate din container</p>
 
 ---
@@ -1411,7 +1411,7 @@ Aplicatia a fost pornita in mediul de dezvoltare local. Toate rutele au fost acc
 
 <details>
   <summary>Vezi captura de ecran: Testare manuala</summary>
-  <img src="documentatie_generata/cubic_vlad/assets/ss7.png" alt="Testare manuala">
+  <img src="readme_individual/cubic_vlad/assets/ss7.png" alt="Testare manuala">
 </details>
 
 ##### Testare cu Jenkins
@@ -1419,7 +1419,7 @@ Automatizarea testarii a fost confirmata prin executia cu succes a pipeline-ului
 
 <details>
   <summary>Vezi captura de ecran: Executie Jenkins</summary>
-  <img src="documentatie_generata/cubic_vlad/assets/ss8.png" alt="Jenkins Pipeline">
+  <img src="readme_individual/cubic_vlad/assets/ss8.png" alt="Jenkins Pipeline">
 </details>
 
 #### Fisier Jenkins
@@ -1436,28 +1436,28 @@ Aplicatia a fost containerizata si izolata cu succes. Se pot vizualiza mai jos d
 
 <details>
   <summary>Vezi captura de ecran: Imagine creata</summary>
-  <img src="documentatie_generata/cubic_vlad/assets/ss1.png" alt="Imagine creata">
+  <img src="readme_individual/cubic_vlad/assets/ss1.png" alt="Imagine creata">
 </details>
 
 <details>
   <summary>Vezi captura de ecran: Container creat si functional</summary>
-  <img src="documentatie_generata/cubic_vlad/assets/ss2.png" alt="Pornire container">
-  <img src="documentatie_generata/cubic_vlad/assets/SS3.png" alt="Status container">
+  <img src="readme_individual/cubic_vlad/assets/ss2.png" alt="Pornire container">
+  <img src="readme_individual/cubic_vlad/assets/SS3.png" alt="Status container">
 </details>
 
 <details>
   <summary>Vezi captura de ecran: Browser accesand aplicatia din container</summary>
-  <img src="documentatie_generata/cubic_vlad/assets/ss_final.png" alt="Browser acces">
+  <img src="readme_individual/cubic_vlad/assets/ss_final.png" alt="Browser acces">
 </details>
 
 <details>
   <summary>Vezi captura de ecran: Consola cu log-uri</summary>
-  <img src="documentatie_generata/cubic_vlad/assets/ss5.png" alt="Log-uri container">
+  <img src="readme_individual/cubic_vlad/assets/ss5.png" alt="Log-uri container">
 </details>
 
 <details>
   <summary>Vezi captura de ecran: Curatare resurse dupa testare</summary>
-  <img src="documentatie_generata/cubic_vlad/assets/ss6.png" alt="Curatare resurse">
+  <img src="readme_individual/cubic_vlad/assets/ss6.png" alt="Curatare resurse">
 </details>
 
 #### Integrare
@@ -1674,27 +1674,27 @@ sudo docker logs masini-fiat-container
 
 ##### Testare locală cu pytest
 
-![Testare locală pytest](documentatie_generata/dumbrava_teodor/docs/images/pytest_local.png)
+![Testare locală pytest](readme_individual/dumbrava_teodor/docs/images/pytest_local.png)
 
 ##### Construirea imaginii Docker
 
-![Docker build](documentatie_generata/dumbrava_teodor/docs/images/docker_build.png)
+![Docker build](readme_individual/dumbrava_teodor/docs/images/docker_build.png)
 
 ##### Container Docker pornit
 
-![Docker ps](documentatie_generata/dumbrava_teodor/docs/images/docker_ps.png)
+![Docker ps](readme_individual/dumbrava_teodor/docs/images/docker_ps.png)
 
 ##### Aplicația rulată în browser din container
 
-![Browser container](documentatie_generata/dumbrava_teodor/docs/images/browser_container.png)
+![Browser container](readme_individual/dumbrava_teodor/docs/images/browser_container.png)
 
 ##### Logurile containerului
 
-![Docker logs](documentatie_generata/dumbrava_teodor/docs/images/docker_logs.png)
+![Docker logs](readme_individual/dumbrava_teodor/docs/images/docker_logs.png)
 
 ##### Jenkins build SUCCESS
 
-![Jenkins success](documentatie_generata/dumbrava_teodor/docs/images/jenkins_success.png)
+![Jenkins success](readme_individual/dumbrava_teodor/docs/images/jenkins_success.png)
 
 ---
 #### Integrare GitHub
@@ -1914,7 +1914,7 @@ Testele verifică:
 
 ##### Captură testare locală
 
-![Teste unitare Porsche](documentatie_generata/fierea_cosmin/docs/poze_readme/teste_unitare.png)
+![Teste unitare Porsche](readme_individual/fierea_cosmin/docs/poze_readme/teste_unitare.png)
 
 ---
 
@@ -1938,15 +1938,15 @@ http://127.0.0.1:5000/masini/porsche/istorie-911
 
 ##### Pagina principală Porsche
 
-![Pagina Porsche](documentatie_generata/fierea_cosmin/docs/poze_readme/pagina_porsche.png)
+![Pagina Porsche](readme_individual/fierea_cosmin/docs/poze_readme/pagina_porsche.png)
 
 ##### Pagina Modele Porsche
 
-![Pagina Modele Porsche](documentatie_generata/fierea_cosmin/docs/poze_readme/pagina_modele_porsche.png)
+![Pagina Modele Porsche](readme_individual/fierea_cosmin/docs/poze_readme/pagina_modele_porsche.png)
 
 ##### Pagina Istoria Porsche 911
 
-![Pagina Istoria Porsche 911](documentatie_generata/fierea_cosmin/docs/poze_readme/pagina_istorie_911.png)
+![Pagina Istoria Porsche 911](readme_individual/fierea_cosmin/docs/poze_readme/pagina_istorie_911.png)
 
 ---
 
@@ -1990,11 +1990,11 @@ sudo docker build -t masini-porsche-fierea .
 
 ##### Începerea construirii imaginii Docker
 
-![Docker build start](documentatie_generata/fierea_cosmin/docs/poze_readme/docker_build_start.png)
+![Docker build start](readme_individual/fierea_cosmin/docs/poze_readme/docker_build_start.png)
 
 ##### Imagine Docker construită cu succes
 
-![Docker build success](documentatie_generata/fierea_cosmin/docs/poze_readme/docker_build_success.png)
+![Docker build success](readme_individual/fierea_cosmin/docs/poze_readme/docker_build_success.png)
 
 La finalul procesului apare mesajul:
 
@@ -2023,7 +2023,7 @@ masini-porsche-fierea
 
 ##### Captură imagine Docker
 
-![Imagine Docker](documentatie_generata/fierea_cosmin/docs/poze_readme/docker_images.png)
+![Imagine Docker](readme_individual/fierea_cosmin/docs/poze_readme/docker_images.png)
 
 ---
 
@@ -2045,7 +2045,7 @@ Containerul `masini-porsche-container` a rulat cu succes și a expus aplicația 
 
 ##### Captură container pornit
 
-![Container Docker pornit](documentatie_generata/fierea_cosmin/docs/poze_readme/docker_ps.png)
+![Container Docker pornit](readme_individual/fierea_cosmin/docs/poze_readme/docker_ps.png)
 
 ---
 ####12. Accesarea aplicației din container și verificarea log-urilor
@@ -2065,7 +2065,7 @@ După pornirea containerului, aplicația a fost accesată în browser la adresa:
 
 ##### Captură aplicație rulată din container
 
-![Aplicație rulată din container](documentatie_generata/fierea_cosmin/docs/poze_readme/docker_browser.png)
+![Aplicație rulată din container](readme_individual/fierea_cosmin/docs/poze_readme/docker_browser.png)
 
 Pentru verificarea accesării aplicației din container s-a folosit comanda:
 
@@ -2138,11 +2138,11 @@ Pipeline-ul a rulat cu succes, iar toate etapele au fost finalizate fără erori
 
 ##### Captură Jenkins
 
-![Jenkins SUCCESS](documentatie_generata/fierea_cosmin/docs/poze_readme/jenkins_success.png)
+![Jenkins SUCCESS](readme_individual/fierea_cosmin/docs/poze_readme/jenkins_success.png)
 
 ##### Pipeline Jenkins
 
-![Jenkins Pipeline](documentatie_generata/fierea_cosmin/docs/poze_readme/jenkins_pipeline.png)
+![Jenkins Pipeline](readme_individual/fierea_cosmin/docs/poze_readme/jenkins_pipeline.png)
 
 ---
 
@@ -2187,7 +2187,7 @@ main_fierea_cosmin
 ```
 
 ##### Captură Pull Request
-![Pull Request](documentatie_generata/fierea_cosmin/docs/poze_readme/pull_request.png)
+![Pull Request](readme_individual/fierea_cosmin/docs/poze_readme/pull_request.png)
 
 ---
 
@@ -2378,7 +2378,7 @@ PYTHONPATH=app flask --app masini run
 
 În captura următoare se observă pornirea aplicației Flask local, pe portul `5000`.
 
-<img src="documentatie_generata/ispas_ariana/docs/screenshots/00_pornire_locala.png" width="900">
+<img src="readme_individual/ispas_ariana/docs/screenshots/00_pornire_locala.png" width="900">
 
 Rutele testate manual au fost:
 
@@ -2390,19 +2390,19 @@ Rutele testate manual au fost:
 
 Pagina `/masini/bentley` afișează elementul ales și butoanele către informațiile specifice.
 
-<img src="documentatie_generata/ispas_ariana/docs/screenshots/02_browser_bentley.png" width="900">
+<img src="readme_individual/ispas_ariana/docs/screenshots/02_browser_bentley.png" width="900">
 
 ##### Pagina „Culoare Bentley”
 
 Pagina `/masini/bentley/culoare` afișează rezultatul funcției `culoare_bentley()`.
 
-<img src="documentatie_generata/ispas_ariana/docs/screenshots/03_browser_culoare.png" width="900">
+<img src="readme_individual/ispas_ariana/docs/screenshots/03_browser_culoare.png" width="900">
 
 ##### Pagina „Descriere Bentley”
 
 Pagina `/masini/bentley/descriere` afișează rezultatul funcției `descriere_bentley()`.
 
-<img src="documentatie_generata/ispas_ariana/docs/screenshots/04_browser_descriere.png" width="900">
+<img src="readme_individual/ispas_ariana/docs/screenshots/04_browser_descriere.png" width="900">
 
 ---
 
@@ -2422,7 +2422,7 @@ PYTHONPATH=. python -m unittest discover -s app/test
 
 Rezultatul obținut a fost `OK`, fiind rulate două teste unitare pentru funcțiile Bentley.
 
-<img src="documentatie_generata/ispas_ariana/docs/screenshots/01_testare_unitara.png" width="900">
+<img src="readme_individual/ispas_ariana/docs/screenshots/01_testare_unitara.png" width="900">
 
 ---
 
@@ -2438,7 +2438,7 @@ sudo docker build -t masini-app .
 
 Imaginea Docker `masini-app` a fost creată cu succes și apare în lista imaginilor locale.
 
-<img src="documentatie_generata/ispas_ariana/docs/screenshots/05_docker_images.png" width="900">
+<img src="readme_individual/ispas_ariana/docs/screenshots/05_docker_images.png" width="900">
 
 Containerul a fost pornit cu următoarea comandă:
 
@@ -2448,7 +2448,7 @@ sudo docker run -d -p 5000:5000 --name masini-container masini-app
 
 Containerul `masini-container` a fost pornit și a expus aplicația pe portul `5000`.
 
-<img src="documentatie_generata/ispas_ariana/docs/screenshots/06_docker_ps.png" width="900">
+<img src="readme_individual/ispas_ariana/docs/screenshots/06_docker_ps.png" width="900">
 
 Aplicația rulată în container a fost accesată din browser la ruta:
 
@@ -2456,11 +2456,11 @@ Aplicația rulată în container a fost accesată din browser la ruta:
 http://127.0.0.1:5000/masini/bentley
 ```
 
-<img src="documentatie_generata/ispas_ariana/docs/screenshots/07_browser_container_bentley.png" width="900">
+<img src="readme_individual/ispas_ariana/docs/screenshots/07_browser_container_bentley.png" width="900">
 
 Logurile containerului confirmă accesarea rutelor Bentley din browser cu status HTTP `200`.
 
-<img src="documentatie_generata/ispas_ariana/docs/screenshots/08_docker_logs.png" width="900">
+<img src="readme_individual/ispas_ariana/docs/screenshots/08_docker_logs.png" width="900">
 
 ---
 
@@ -2476,7 +2476,7 @@ Pipeline-ul Jenkins a rulat cu succes și a folosit fișierul `Jenkinsfile` din 
 
 Rezultatul rulării a fost `SUCCESS`.
 
-<img src="documentatie_generata/ispas_ariana/docs/screenshots/09_jenkins_success.png" width="900">
+<img src="readme_individual/ispas_ariana/docs/screenshots/09_jenkins_success.png" width="900">
 
 ##### Vizualizare pipeline în Blue Ocean
 
@@ -2487,7 +2487,7 @@ Rezultatul rulării a fost `SUCCESS`.
 - `Build image`
 - `Deploy`
 
-<img src="documentatie_generata/ispas_ariana/docs/screenshots/10_blue_ocean_pipeline.png" width="900">
+<img src="readme_individual/ispas_ariana/docs/screenshots/10_blue_ocean_pipeline.png" width="900">
 
 ---
 
@@ -2621,20 +2621,20 @@ python -m unittest discover -s app/test -p "test_*.py"
 
 **1. Imaginea creata**
 
-![Imaginea creata cu succes](documentatie_generata/malanca_gabriel/assets/image.png)
+![Imaginea creata cu succes](readme_individual/malanca_gabriel/assets/image.png)
 
 **2. Containerul ruland**
 
-![Containerul Docker ruland](documentatie_generata/malanca_gabriel/assets/image-1.png)
+![Containerul Docker ruland](readme_individual/malanca_gabriel/assets/image-1.png)
 
 **3. Accesarea aplicatiei din browser**
-![Accesare ruta generala](documentatie_generata/malanca_gabriel/assets/image-2.png)
-![Accesare ruta element](documentatie_generata/malanca_gabriel/assets/image-3.png)
-![Accesare lista de elemente](documentatie_generata/malanca_gabriel/assets/image-4.png)
-![Accesare detalii element](documentatie_generata/malanca_gabriel/assets/image-5.png)
+![Accesare ruta generala](readme_individual/malanca_gabriel/assets/image-2.png)
+![Accesare ruta element](readme_individual/malanca_gabriel/assets/image-3.png)
+![Accesare lista de elemente](readme_individual/malanca_gabriel/assets/image-4.png)
+![Accesare detalii element](readme_individual/malanca_gabriel/assets/image-5.png)
 
 **4. Log-urile din consola care confirma accesarea**
-![Log-uri consola](documentatie_generata/malanca_gabriel/assets/image-6.png)
+![Log-uri consola](readme_individual/malanca_gabriel/assets/image-6.png)
 
 #### Pull Requests
 
@@ -2899,19 +2899,19 @@ Finished: SUCCESS
 
 ##### Pagina principala
 
-![Pagina principala](documentatie_generata/neacsu_roxana/docs/images/browser_home.png)
+![Pagina principala](readme_individual/neacsu_roxana/docs/images/browser_home.png)
 
 ##### Pagina Rolls-Royce
 
-![Pagina Rolls-Royce](documentatie_generata/neacsu_roxana/docs/images/browser_rollsroyce.png)
+![Pagina Rolls-Royce](readme_individual/neacsu_roxana/docs/images/browser_rollsroyce.png)
 
 ##### Pagina Istoric Rolls-Royce
 
-![Istoric Rolls-Royce](documentatie_generata/neacsu_roxana/docs/images/browser_istoric.png)
+![Istoric Rolls-Royce](readme_individual/neacsu_roxana/docs/images/browser_istoric.png)
 
 ##### Pagina Motorizare Rolls-Royce
 
-![Motorizare Rolls-Royce](documentatie_generata/neacsu_roxana/docs/images/browser_motorizare.png)
+![Motorizare Rolls-Royce](readme_individual/neacsu_roxana/docs/images/browser_motorizare.png)
 
 ---
 
@@ -2919,15 +2919,15 @@ Finished: SUCCESS
 
 ##### Imagine Docker creata
 
-![Imagine Docker](documentatie_generata/neacsu_roxana/docs/images/docker_images.png)
+![Imagine Docker](readme_individual/neacsu_roxana/docs/images/docker_images.png)
 
 ##### Container Docker pornit
 
-![Container Docker](documentatie_generata/neacsu_roxana/docs/images/docker_ps.png)
+![Container Docker](readme_individual/neacsu_roxana/docs/images/docker_ps.png)
 
 ##### Loguri container Docker
 
-![Loguri container](documentatie_generata/neacsu_roxana/docs/images/container_logs.png)
+![Loguri container](readme_individual/neacsu_roxana/docs/images/container_logs.png)
 
 ---
 
@@ -2935,11 +2935,11 @@ Finished: SUCCESS
 
 ##### Pipeline Jenkins executat cu succes
 
-![Jenkins pipeline success](documentatie_generata/neacsu_roxana/docs/images/jenkins_pipeline_success.png)
+![Jenkins pipeline success](readme_individual/neacsu_roxana/docs/images/jenkins_pipeline_success.png)
 
 ##### Console Output Jenkins
 
-![Jenkins console output](documentatie_generata/neacsu_roxana/docs/images/jenkins_console_output.png)
+![Jenkins console output](readme_individual/neacsu_roxana/docs/images/jenkins_console_output.png)
 
 ---
 
@@ -3170,23 +3170,23 @@ Pipeline-ul s-a finalizat cu succes, ceea ce confirmă că proiectul este config
 
 ##### Teste automate rulate cu succes
 
-![Teste automate](documentatie_generata/pamfir_cosmin/docs/poza1.jpeg)
+![Teste automate](readme_individual/pamfir_cosmin/docs/poza1.jpeg)
 
 ##### Container Docker pornit
 
-![Docker ps](documentatie_generata/pamfir_cosmin/docs/poza2.jpeg)
+![Docker ps](readme_individual/pamfir_cosmin/docs/poza2.jpeg)
 
 ##### Build și rulare Docker
 
-![Docker build si run](documentatie_generata/pamfir_cosmin/docs/poza3.jpeg)
+![Docker build si run](readme_individual/pamfir_cosmin/docs/poza3.jpeg)
 
 ##### Consolă Jenkins
 
-![Jenkins console](documentatie_generata/pamfir_cosmin/docs/Jenkins1.png)
+![Jenkins console](readme_individual/pamfir_cosmin/docs/Jenkins1.png)
 
 ##### Pipeline Jenkins finalizat cu succes
 
-![Jenkins pipeline](documentatie_generata/pamfir_cosmin/docs/Jenkins2.png)
+![Jenkins pipeline](readme_individual/pamfir_cosmin/docs/Jenkins2.png)
 
 #### Concluzie
 
@@ -3382,15 +3382,15 @@ http://127.0.0.1:5000/masini/mclaren/descriere
 
 #### Pagina principală
 
-![Pagina principală Flask](documentatie_generata/poting_stefan/docs/screenshots/01_flask_home.png)
+![Pagina principală Flask](readme_individual/poting_stefan/docs/screenshots/01_flask_home.png)
 
 #### Pagina Culoare Mașini
 
-![Pagina Mașini](documentatie_generata/poting_stefan/docs/screenshots/02_flask_masini.png)
+![Pagina Mașini](readme_individual/poting_stefan/docs/screenshots/02_flask_masini.png)
 
 #### Pagina Descriere McLaren
 
-![Pagina McLaren](documentatie_generata/poting_stefan/docs/screenshots/03_flask_mclaren.png)
+![Pagina McLaren](readme_individual/poting_stefan/docs/screenshots/03_flask_mclaren.png)
 
 ---
 
@@ -3419,7 +3419,7 @@ OK
 
 #### Captură teste unitare locale
 
-![Teste unitare locale](documentatie_generata/poting_stefan/docs/screenshots/08_unittest_local.png)
+![Teste unitare locale](readme_individual/poting_stefan/docs/screenshots/08_unittest_local.png)
 
 ---
 
@@ -3491,7 +3491,7 @@ Această comandă pornește aplicația în container și mapează portul `5000` 
 sudo docker images
 ```
 
-![Docker images](documentatie_generata/poting_stefan/docs/screenshots/04_docker_images.png)
+![Docker images](readme_individual/poting_stefan/docs/screenshots/04_docker_images.png)
 
 #### Verificarea containerelor active
 
@@ -3499,7 +3499,7 @@ sudo docker images
 sudo docker ps
 ```
 
-![Docker ps](documentatie_generata/poting_stefan/docs/screenshots/05_docker_ps.png)
+![Docker ps](readme_individual/poting_stefan/docs/screenshots/05_docker_ps.png)
 
 #### Verificarea logurilor containerului
 
@@ -3509,7 +3509,7 @@ sudo docker logs masini-container
 
 În loguri se observă accesarea rutelor Flask și răspunsurile HTTP `200`, ceea ce confirmă faptul că aplicația rulează corect în container.
 
-![Docker logs](documentatie_generata/poting_stefan/docs/screenshots/06_docker_logs.png)
+![Docker logs](readme_individual/poting_stefan/docs/screenshots/06_docker_logs.png)
 
 ---
 
@@ -3573,11 +3573,11 @@ Finished: SUCCESS
 
 #### Captură Jenkins Console Output
 
-![Jenkins SUCCESS](documentatie_generata/poting_stefan/docs/screenshots/07_jenkins_success.png)
+![Jenkins SUCCESS](readme_individual/poting_stefan/docs/screenshots/07_jenkins_success.png)
 
 #### Captură Jenkins Pipeline Stages
 
-![Pipeline Jenkins stages](documentatie_generata/poting_stefan/docs/screenshots/09_jenkins_pipeline_stages.png)
+![Pipeline Jenkins stages](readme_individual/poting_stefan/docs/screenshots/09_jenkins_pipeline_stages.png)
 
 ---
 
@@ -4034,15 +4034,15 @@ Aplicatia are titlul MAZDA si trei butoane:
 
 ##### Pagina Acasa
 
-![Pagina Acasa](documentatie_generata/vlad_alexandru/docs/images/browser_home.png)
+![Pagina Acasa](readme_individual/vlad_alexandru/docs/images/browser_home.png)
 
 ##### Pagina Istoric
 
-![Pagina Istoric](documentatie_generata/vlad_alexandru/docs/images/browser_istoric.png)
+![Pagina Istoric](readme_individual/vlad_alexandru/docs/images/browser_istoric.png)
 
 ##### Pagina Motorizare
 
-![Pagina Motorizare](documentatie_generata/vlad_alexandru/docs/images/browser_motorizare.png)
+![Pagina Motorizare](readme_individual/vlad_alexandru/docs/images/browser_motorizare.png)
 
 #### 5. Mediu virtual Python
 
@@ -4108,15 +4108,15 @@ Aplicatia a functionat corect local.
 
 ##### Dovada rulare pagina Acasa
 
-![Pagina Acasa](documentatie_generata/vlad_alexandru/docs/images/browser_home.png)
+![Pagina Acasa](readme_individual/vlad_alexandru/docs/images/browser_home.png)
 
 ##### Dovada rulare pagina Istoric
 
-![Pagina Istoric](documentatie_generata/vlad_alexandru/docs/images/browser_istoric.png)
+![Pagina Istoric](readme_individual/vlad_alexandru/docs/images/browser_istoric.png)
 
 ##### Dovada rulare pagina Motorizare
 
-![Pagina Motorizare](documentatie_generata/vlad_alexandru/docs/images/browser_motorizare.png)
+![Pagina Motorizare](readme_individual/vlad_alexandru/docs/images/browser_motorizare.png)
 
 #### 7. Testare automata cu pytest
 
@@ -4218,7 +4218,7 @@ Toate etapele au status PASS.
 
 ##### Dovada Jenkins PASS
 
-![Jenkins PASS](documentatie_generata/vlad_alexandru/docs/images/jenkins_pass.png)
+![Jenkins PASS](readme_individual/vlad_alexandru/docs/images/jenkins_pass.png)
 
 #### 10. Docker si containerizare
 
@@ -4276,7 +4276,7 @@ masini-vlad-alexandru
 
 ##### Dovada imagine Docker creata
 
-![Imagine Docker](documentatie_generata/vlad_alexandru/docs/images/docker_images.png)
+![Imagine Docker](readme_individual/vlad_alexandru/docs/images/docker_images.png)
 
 #### 12. Container Docker
 
@@ -4315,7 +4315,7 @@ docker ps
 
 ##### Dovada container Docker pornit
 
-![Container Docker](documentatie_generata/vlad_alexandru/docs/images/docker_ps.png)
+![Container Docker](readme_individual/vlad_alexandru/docs/images/docker_ps.png)
 
 #### 13. Consola containerului
 
@@ -4333,7 +4333,7 @@ Acest lucru confirma ca browserul a accesat aplicatia rulata in container.
 
 ##### Dovada consola containerului
 
-![Consola container](documentatie_generata/vlad_alexandru/docs/images/container_logs.png)
+![Consola container](readme_individual/vlad_alexandru/docs/images/container_logs.png)
 
 #### 14. .dockerignore
 
@@ -4369,7 +4369,7 @@ Review-ul confirma ca modificarile au fost verificate de un coleg inainte de int
 
 ##### Dovada Pull Request review
 
-![Pull Request review](documentatie_generata/vlad_alexandru/docs/images/pull_request_review.png)
+![Pull Request review](readme_individual/vlad_alexandru/docs/images/pull_request_review.png)
 
 #### 16. Comenzi utile pentru prezentare
 

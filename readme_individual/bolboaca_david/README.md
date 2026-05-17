@@ -44,17 +44,17 @@ Am creat si rulat imaginea docker cu succes.
 -De facut review la un coleg
 
 #### Testare manuală
-![Pagina Ford](documentatie_generata/bolboaca_david/ford.png)
-![Ford Culoare](documentatie_generata/bolboaca_david/ford%20culoare.png)
-![Ford Descriere](documentatie_generata/bolboaca_david/ford%20descriere.png)
+![Pagina Ford](readme_individual/bolboaca_david/ford.png)
+![Ford Culoare](readme_individual/bolboaca_david/ford%20culoare.png)
+![Ford Descriere](readme_individual/bolboaca_david/ford%20descriere.png)
 
 #### Testare cu Jenkins
-![Jenkins Pass](documentatie_generata/bolboaca_david/SUCCES.jpg)
+![Jenkins Pass](readme_individual/bolboaca_david/SUCCES.jpg)
 
 #### Containerizare
-![Consola](documentatie_generata/bolboaca_david/consola.png)
-![Docker Container](documentatie_generata/bolboaca_david/docker%20container.png)
-![Docker Imagine](documentatie_generata/bolboaca_david/docker%20img.png)
+![Consola](readme_individual/bolboaca_david/consola.png)
+![Docker Container](readme_individual/bolboaca_david/docker%20container.png)
+![Docker Imagine](readme_individual/bolboaca_david/docker%20img.png)
 #### Stadiul proiectelor grupei
 
 | Element | Dezvoltator | Implementare | Testare | Integrare |

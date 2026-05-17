@@ -310,31 +310,31 @@ Acest lucru confirma ca paginile Honda pot fi accesate din browser prin containe
 
 ##### Imagine Docker
 
-![Imagine Docker](documentatie_generata/anton_darius/docs/images/docker_images.png)
+![Imagine Docker](readme_individual/anton_darius/docs/images/docker_images.png)
 
 ##### Container Docker pornit
 
-![Container Docker](documentatie_generata/anton_darius/docs/images/docker_ps.png)
+![Container Docker](readme_individual/anton_darius/docs/images/docker_ps.png)
 
 ##### Pagina principala Honda
 
-![Pagina Honda](documentatie_generata/anton_darius/docs/images/browser_honda_home.png)
+![Pagina Honda](readme_individual/anton_darius/docs/images/browser_honda_home.png)
 
 ##### Pagina Istoric Honda
 
-![Istoric Honda](documentatie_generata/anton_darius/docs/images/browser_honda_istoric.png)
+![Istoric Honda](readme_individual/anton_darius/docs/images/browser_honda_istoric.png)
 
 ##### Pagina Modele Honda
 
-![Modele Honda](documentatie_generata/anton_darius/docs/images/browser_honda_modele.png)
+![Modele Honda](readme_individual/anton_darius/docs/images/browser_honda_modele.png)
 
 ##### Loguri Docker
 
-![Loguri Docker](documentatie_generata/anton_darius/docs/images/docker_logs.png)
+![Loguri Docker](readme_individual/anton_darius/docs/images/docker_logs.png)
 
 ##### Jenkins - teste rulate cu succes
 
-![Jenkins Success](documentatie_generata/anton_darius/docs/images/jenkins_success.png)
+![Jenkins Success](readme_individual/anton_darius/docs/images/jenkins_success.png)
 
 ---
 

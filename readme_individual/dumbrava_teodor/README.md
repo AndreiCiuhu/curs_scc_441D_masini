@@ -185,27 +185,27 @@ sudo docker logs masini-fiat-container
 
 ##### Testare locală cu pytest
 
-![Testare locală pytest](documentatie_generata/dumbrava_teodor/docs/images/pytest_local.png)
+![Testare locală pytest](readme_individual/dumbrava_teodor/docs/images/pytest_local.png)
 
 ##### Construirea imaginii Docker
 
-![Docker build](documentatie_generata/dumbrava_teodor/docs/images/docker_build.png)
+![Docker build](readme_individual/dumbrava_teodor/docs/images/docker_build.png)
 
 ##### Container Docker pornit
 
-![Docker ps](documentatie_generata/dumbrava_teodor/docs/images/docker_ps.png)
+![Docker ps](readme_individual/dumbrava_teodor/docs/images/docker_ps.png)
 
 ##### Aplicația rulată în browser din container
 
-![Browser container](documentatie_generata/dumbrava_teodor/docs/images/browser_container.png)
+![Browser container](readme_individual/dumbrava_teodor/docs/images/browser_container.png)
 
 ##### Logurile containerului
 
-![Docker logs](documentatie_generata/dumbrava_teodor/docs/images/docker_logs.png)
+![Docker logs](readme_individual/dumbrava_teodor/docs/images/docker_logs.png)
 
 ##### Jenkins build SUCCESS
 
-![Jenkins success](documentatie_generata/dumbrava_teodor/docs/images/jenkins_success.png)
+![Jenkins success](readme_individual/dumbrava_teodor/docs/images/jenkins_success.png)
 
 ---
 #### Integrare GitHub

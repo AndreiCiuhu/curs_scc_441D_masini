@@ -136,7 +136,7 @@ PYTHONPATH=app flask --app masini run
 
 În captura următoare se observă pornirea aplicației Flask local, pe portul `5000`.
 
-<img src="documentatie_generata/baroiu_silvian/docs/screenshots/00_pornire_locala.png" width="900">
+<img src="readme_individual/baroiu_silvian/docs/screenshots/00_pornire_locala.png" width="900">
 
 Rutele testate manual au fost:
 
@@ -146,13 +146,13 @@ Rutele testate manual au fost:
 ##### Pagina Toyota 
 Pagina `/masini/toyota` afișează elementul ales și butoanele către informațiile specifice.
 
-<img src="documentatie_generata/baroiu_silvian/docs/screenshots/02_browser_toyota.png" width="900">
+<img src="readme_individual/baroiu_silvian/docs/screenshots/02_browser_toyota.png" width="900">
 
 ##### Pagina „Model Toyota”
 
 Pagina `/masini/Toyota/gr_supra` afișează rezultatul funcției `descriere_Toyota()`.
 
-<img src="documentatie_generata/baroiu_silvian/docs/screenshots/03_browser_model.png" width="900">
+<img src="readme_individual/baroiu_silvian/docs/screenshots/03_browser_model.png" width="900">
 
 
 ---
@@ -173,7 +173,7 @@ PYTHONPATH=. python -m unittest discover -s app/test
 
 Rezultatul obținut a fost `OK`, fiind rulate două teste unitare pentru funcțiile Toyota.
 
-<img src="documentatie_generata/baroiu_silvian/docs/screenshots/01_testare_unitara.png" width="900">
+<img src="readme_individual/baroiu_silvian/docs/screenshots/01_testare_unitara.png" width="900">
 
 ---
 
@@ -189,7 +189,7 @@ sudo docker build -t masini-app .
 
 Imaginea Docker `masini-app` a fost creată cu succes și apare în lista imaginilor locale.
 
-<img src="documentatie_generata/baroiu_silvian/docs/screenshots/05_docker_images.png" width="900">
+<img src="readme_individual/baroiu_silvian/docs/screenshots/05_docker_images.png" width="900">
 
 Containerul a fost pornit astfel:
 
@@ -199,7 +199,7 @@ sudo docker run -d -p 5000:5000 --name masini-container masini-app
 
 Containerul `masini-container` a fost pornit și a expus aplicația pe portul `5000`.
 
-<img src="documentatie_generata/baroiu_silvian/docs/screenshots/06_docker_ps.png" width="900">
+<img src="readme_individual/baroiu_silvian/docs/screenshots/06_docker_ps.png" width="900">
 
 Aplicația rulată în container a fost accesată din browser la ruta:
 
@@ -207,11 +207,11 @@ Aplicația rulată în container a fost accesată din browser la ruta:
 http://127.0.0.1:5000/masini/Toyota
 ```
 
-<img src="documentatie_generata/baroiu_silvian/docs/screenshots/07_browser_container_toyota.png" width="900">
+<img src="readme_individual/baroiu_silvian/docs/screenshots/07_browser_container_toyota.png" width="900">
 
 Logurile containerului confirmă cererile HTTP cu status 200 pentru rutele Toyota.
 
-<img src="documentatie_generata/baroiu_silvian/docs/screenshots/08_docker_logs.png" width="900">
+<img src="readme_individual/baroiu_silvian/docs/screenshots/08_docker_logs.png" width="900">
 
 ---
 
@@ -225,7 +225,7 @@ dev_baroiu_silvian
 
 Toate etapele au fost finalizate cu succes, rezultatul final fiind SUCCESS.
 
-<img src="documentatie_generata/baroiu_silvian/docs/screenshots/09_jenkins_success.png" width="900">
+<img src="readme_individual/baroiu_silvian/docs/screenshots/09_jenkins_success.png" width="900">
 
 ##### Vizualizare pipeline în Blue Ocean
 
@@ -236,7 +236,7 @@ Toate etapele au fost finalizate cu succes, rezultatul final fiind SUCCESS.
 - `Build image`
 - `Deploy`
 
-<img src="documentatie_generata/baroiu_silvian/docs/screenshots/10_blue_ocean_pipeline.png" width="900">
+<img src="readme_individual/baroiu_silvian/docs/screenshots/10_blue_ocean_pipeline.png" width="900">
 
 ---
 

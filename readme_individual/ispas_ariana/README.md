@@ -138,7 +138,7 @@ PYTHONPATH=app flask --app masini run
 
 În captura următoare se observă pornirea aplicației Flask local, pe portul `5000`.
 
-<img src="documentatie_generata/ispas_ariana/docs/screenshots/00_pornire_locala.png" width="900">
+<img src="readme_individual/ispas_ariana/docs/screenshots/00_pornire_locala.png" width="900">
 
 Rutele testate manual au fost:
 
@@ -150,19 +150,19 @@ Rutele testate manual au fost:
 
 Pagina `/masini/bentley` afișează elementul ales și butoanele către informațiile specifice.
 
-<img src="documentatie_generata/ispas_ariana/docs/screenshots/02_browser_bentley.png" width="900">
+<img src="readme_individual/ispas_ariana/docs/screenshots/02_browser_bentley.png" width="900">
 
 ##### Pagina „Culoare Bentley”
 
 Pagina `/masini/bentley/culoare` afișează rezultatul funcției `culoare_bentley()`.
 
-<img src="documentatie_generata/ispas_ariana/docs/screenshots/03_browser_culoare.png" width="900">
+<img src="readme_individual/ispas_ariana/docs/screenshots/03_browser_culoare.png" width="900">
 
 ##### Pagina „Descriere Bentley”
 
 Pagina `/masini/bentley/descriere` afișează rezultatul funcției `descriere_bentley()`.
 
-<img src="documentatie_generata/ispas_ariana/docs/screenshots/04_browser_descriere.png" width="900">
+<img src="readme_individual/ispas_ariana/docs/screenshots/04_browser_descriere.png" width="900">
 
 ---
 
@@ -182,7 +182,7 @@ PYTHONPATH=. python -m unittest discover -s app/test
 
 Rezultatul obținut a fost `OK`, fiind rulate două teste unitare pentru funcțiile Bentley.
 
-<img src="documentatie_generata/ispas_ariana/docs/screenshots/01_testare_unitara.png" width="900">
+<img src="readme_individual/ispas_ariana/docs/screenshots/01_testare_unitara.png" width="900">
 
 ---
 
@@ -198,7 +198,7 @@ sudo docker build -t masini-app .
 
 Imaginea Docker `masini-app` a fost creată cu succes și apare în lista imaginilor locale.
 
-<img src="documentatie_generata/ispas_ariana/docs/screenshots/05_docker_images.png" width="900">
+<img src="readme_individual/ispas_ariana/docs/screenshots/05_docker_images.png" width="900">
 
 Containerul a fost pornit cu următoarea comandă:
 
@@ -208,7 +208,7 @@ sudo docker run -d -p 5000:5000 --name masini-container masini-app
 
 Containerul `masini-container` a fost pornit și a expus aplicația pe portul `5000`.
 
-<img src="documentatie_generata/ispas_ariana/docs/screenshots/06_docker_ps.png" width="900">
+<img src="readme_individual/ispas_ariana/docs/screenshots/06_docker_ps.png" width="900">
 
 Aplicația rulată în container a fost accesată din browser la ruta:
 
@@ -216,11 +216,11 @@ Aplicația rulată în container a fost accesată din browser la ruta:
 http://127.0.0.1:5000/masini/bentley
 ```
 
-<img src="documentatie_generata/ispas_ariana/docs/screenshots/07_browser_container_bentley.png" width="900">
+<img src="readme_individual/ispas_ariana/docs/screenshots/07_browser_container_bentley.png" width="900">
 
 Logurile containerului confirmă accesarea rutelor Bentley din browser cu status HTTP `200`.
 
-<img src="documentatie_generata/ispas_ariana/docs/screenshots/08_docker_logs.png" width="900">
+<img src="readme_individual/ispas_ariana/docs/screenshots/08_docker_logs.png" width="900">
 
 ---
 
@@ -236,7 +236,7 @@ Pipeline-ul Jenkins a rulat cu succes și a folosit fișierul `Jenkinsfile` din 
 
 Rezultatul rulării a fost `SUCCESS`.
 
-<img src="documentatie_generata/ispas_ariana/docs/screenshots/09_jenkins_success.png" width="900">
+<img src="readme_individual/ispas_ariana/docs/screenshots/09_jenkins_success.png" width="900">
 
 ##### Vizualizare pipeline în Blue Ocean
 
@@ -247,7 +247,7 @@ Rezultatul rulării a fost `SUCCESS`.
 - `Build image`
 - `Deploy`
 
-<img src="documentatie_generata/ispas_ariana/docs/screenshots/10_blue_ocean_pipeline.png" width="900">
+<img src="readme_individual/ispas_ariana/docs/screenshots/10_blue_ocean_pipeline.png" width="900">
 
 ---
 

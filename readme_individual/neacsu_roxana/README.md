@@ -234,19 +234,19 @@ Finished: SUCCESS
 
 ##### Pagina principala
 
-![Pagina principala](documentatie_generata/neacsu_roxana/docs/images/browser_home.png)
+![Pagina principala](readme_individual/neacsu_roxana/docs/images/browser_home.png)
 
 ##### Pagina Rolls-Royce
 
-![Pagina Rolls-Royce](documentatie_generata/neacsu_roxana/docs/images/browser_rollsroyce.png)
+![Pagina Rolls-Royce](readme_individual/neacsu_roxana/docs/images/browser_rollsroyce.png)
 
 ##### Pagina Istoric Rolls-Royce
 
-![Istoric Rolls-Royce](documentatie_generata/neacsu_roxana/docs/images/browser_istoric.png)
+![Istoric Rolls-Royce](readme_individual/neacsu_roxana/docs/images/browser_istoric.png)
 
 ##### Pagina Motorizare Rolls-Royce
 
-![Motorizare Rolls-Royce](documentatie_generata/neacsu_roxana/docs/images/browser_motorizare.png)
+![Motorizare Rolls-Royce](readme_individual/neacsu_roxana/docs/images/browser_motorizare.png)
 
 ---
 
@@ -254,15 +254,15 @@ Finished: SUCCESS
 
 ##### Imagine Docker creata
 
-![Imagine Docker](documentatie_generata/neacsu_roxana/docs/images/docker_images.png)
+![Imagine Docker](readme_individual/neacsu_roxana/docs/images/docker_images.png)
 
 ##### Container Docker pornit
 
-![Container Docker](documentatie_generata/neacsu_roxana/docs/images/docker_ps.png)
+![Container Docker](readme_individual/neacsu_roxana/docs/images/docker_ps.png)
 
 ##### Loguri container Docker
 
-![Loguri container](documentatie_generata/neacsu_roxana/docs/images/container_logs.png)
+![Loguri container](readme_individual/neacsu_roxana/docs/images/container_logs.png)
 
 ---
 
@@ -270,11 +270,11 @@ Finished: SUCCESS
 
 ##### Pipeline Jenkins executat cu succes
 
-![Jenkins pipeline success](documentatie_generata/neacsu_roxana/docs/images/jenkins_pipeline_success.png)
+![Jenkins pipeline success](readme_individual/neacsu_roxana/docs/images/jenkins_pipeline_success.png)
 
 ##### Console Output Jenkins
 
-![Jenkins console output](documentatie_generata/neacsu_roxana/docs/images/jenkins_console_output.png)
+![Jenkins console output](readme_individual/neacsu_roxana/docs/images/jenkins_console_output.png)
 
 ---
 

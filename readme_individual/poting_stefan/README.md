@@ -182,15 +182,15 @@ http://127.0.0.1:5000/masini/mclaren/descriere
 
 #### Pagina principală
 
-![Pagina principală Flask](documentatie_generata/poting_stefan/docs/screenshots/01_flask_home.png)
+![Pagina principală Flask](readme_individual/poting_stefan/docs/screenshots/01_flask_home.png)
 
 #### Pagina Culoare Mașini
 
-![Pagina Mașini](documentatie_generata/poting_stefan/docs/screenshots/02_flask_masini.png)
+![Pagina Mașini](readme_individual/poting_stefan/docs/screenshots/02_flask_masini.png)
 
 #### Pagina Descriere McLaren
 
-![Pagina McLaren](documentatie_generata/poting_stefan/docs/screenshots/03_flask_mclaren.png)
+![Pagina McLaren](readme_individual/poting_stefan/docs/screenshots/03_flask_mclaren.png)
 
 ---
 
@@ -219,7 +219,7 @@ OK
 
 #### Captură teste unitare locale
 
-![Teste unitare locale](documentatie_generata/poting_stefan/docs/screenshots/08_unittest_local.png)
+![Teste unitare locale](readme_individual/poting_stefan/docs/screenshots/08_unittest_local.png)
 
 ---
 
@@ -291,7 +291,7 @@ Această comandă pornește aplicația în container și mapează portul `5000` 
 sudo docker images
 ```
 
-![Docker images](documentatie_generata/poting_stefan/docs/screenshots/04_docker_images.png)
+![Docker images](readme_individual/poting_stefan/docs/screenshots/04_docker_images.png)
 
 #### Verificarea containerelor active
 
@@ -299,7 +299,7 @@ sudo docker images
 sudo docker ps
 ```
 
-![Docker ps](documentatie_generata/poting_stefan/docs/screenshots/05_docker_ps.png)
+![Docker ps](readme_individual/poting_stefan/docs/screenshots/05_docker_ps.png)
 
 #### Verificarea logurilor containerului
 
@@ -309,7 +309,7 @@ sudo docker logs masini-container
 
 În loguri se observă accesarea rutelor Flask și răspunsurile HTTP `200`, ceea ce confirmă faptul că aplicația rulează corect în container.
 
-![Docker logs](documentatie_generata/poting_stefan/docs/screenshots/06_docker_logs.png)
+![Docker logs](readme_individual/poting_stefan/docs/screenshots/06_docker_logs.png)
 
 ---
 
@@ -373,11 +373,11 @@ Finished: SUCCESS
 
 #### Captură Jenkins Console Output
 
-![Jenkins SUCCESS](documentatie_generata/poting_stefan/docs/screenshots/07_jenkins_success.png)
+![Jenkins SUCCESS](readme_individual/poting_stefan/docs/screenshots/07_jenkins_success.png)
 
 #### Captură Jenkins Pipeline Stages
 
-![Pipeline Jenkins stages](documentatie_generata/poting_stefan/docs/screenshots/09_jenkins_pipeline_stages.png)
+![Pipeline Jenkins stages](readme_individual/poting_stefan/docs/screenshots/09_jenkins_pipeline_stages.png)
 
 ---
 

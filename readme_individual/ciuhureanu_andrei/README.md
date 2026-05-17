@@ -186,19 +186,19 @@ http://127.0.0.1:5011
 
 ##### Capturi verificare manuală
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_1.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_1.png)
 <p align="center">Figura 7.1 Rularea comenzilor în terminalul local</p>
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_2.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_2.png)
 <p align="center">Figura 7.2 Ruta principală</p>
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_3.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_3.png)
 <p align="center">Figura 7.3 Ruta /audi</p>
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_4.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_4.png)
 <p align="center">Figura 7.4 Ruta /audi/model</p>
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_5.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_5.png)
 <p align="center">Figura 7.5 Ruta /audi/motoare</p>
 
 ---
@@ -227,7 +227,7 @@ PASS
 
 Testele verifică dacă funcțiile returnează datele așteptate pentru modelele și motorizările Audi.
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_6.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_6.png)
 <p align="center">Figura 8.1 Testarea locală cu pytest</p>
 
 ---
@@ -251,19 +251,19 @@ Fișierul Jenkins este folosit pentru validarea automată a codului adăugat pe 
 
 ##### Capturi Jenkins
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_7.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_7.png)
 <p align="center">Figura 9.1 Pipeline-ul Jenkins configurat</p>
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_8.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_8.png)
 <p align="center">Figura 9.2 Instalarea dependențelor</p>
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_9.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_9.png)
 <p align="center">Figura 9.3 Rularea testelor in Jenkins</p>
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_10.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_10.png)
 <p align="center">Figura 9.4 Construirea imaginii Docker</p>
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_11.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_11.png)
 <p align="center">Figura 9.5 Pornire container</p>
 
 ---
@@ -327,16 +327,16 @@ http://127.0.0.1:5011
 
 ##### Capturi containerizare
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_12.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_12.png)
 <p align="center">Figura 10.1 Imaginea Docker</p>
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_13.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_13.png)
 <p align="center">Figura 10.2 Creare și pornire container</p>
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_14.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_14.png)
 <p align="center">Figura 10.3 Mesajele afișate în consola containerului</p>
 
-![alt text](documentatie_generata/ciuhureanu_andrei/static/imagini/figura_15.png)
+![alt text](readme_individual/ciuhureanu_andrei/static/imagini/figura_15.png)
 <p align="center">Figura 10.4 Accesarea aplicației rulate din container</p>
 
 ---
