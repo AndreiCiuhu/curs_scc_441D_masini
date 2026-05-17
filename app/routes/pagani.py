@@ -6,12 +6,12 @@ pagani_bp=Blueprint('pagani', __name__)
 
 @pagani_bp.route('/pagani')
 def pagina_pagani():
-	return render_template('pagani/pagani.html')
+	return 'Pagani'
 
 @pagani_bp.route('/pagani/modele')
 def culoare():
-	return render_template(modele_pagani())
+	return modele_pagani()
 
 @pagani_bp.route('/pagani/descriere')
 def descriere():
-	return render_template(descriere_pagani())
+	return descriere_pagani()
