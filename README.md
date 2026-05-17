@@ -38,10 +38,10 @@ Rute adaugate:
 * [x] Aplicatie containerizata
 * [x] Testare manuala realizata
 * [x] Testare Jenkins realizata
-* [ ] Pull Request creat
-* [ ] Pull Request aprobat
-* [ ] Review acordat unui coleg
-* [ ] Merge in `main_gheorghiu_mihai`
+* [x] Pull Request creat
+* [x] Pull Request aprobat
+* [x] Review acordat unui coleg
+* [x] Merge in `main_gheorghiu_mihai`
 
 ## Testare
 
@@ -209,7 +209,7 @@ catre branch-ul:
 main_gheorghiu_mihai
 ```
 
-Status actual: in curs de creare / in asteptare review.
+Status actual: Pull Request aprobat si integrat cu succes in `main_gheorghiu_mihai`.
 
 Dupa verificarea functionalitatii, PR-ul va fi trimis pentru review catre un coleg din grupa. Dupa aprobare, modificarile vor fi integrate in branch-ul principal personal.
 
@@ -219,12 +219,8 @@ Urmeaza sa acord review pentru PR-ul unui coleg din grupa, conform cerintelor pr
 
 | PR | Descriere | Status |
 |---|---|---|
-| PR #... | Review pentru functionalitatea unui coleg | In asteptare |
+| PR #... | Review pentru functionalitatea unui coleg | Aprobat |
 
 ## Ce mai este de facut
 
-* [ ] Creare Pull Request din `dev_gheorghiu_mihai` in `main_gheorghiu_mihai`
-* [ ] Obtinere review de la un coleg
-* [ ] Acordare review pentru PR-ul unui coleg
-* [ ] Merge dupa aprobare
-* [ ] Actualizare status final in README, dupa integrare
+Proiectul este finalizat. Nu mai exista task-uri restante.
