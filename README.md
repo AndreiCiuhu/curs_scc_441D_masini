@@ -84,7 +84,7 @@ Au fost implementate:
 - [x] Jenkinsfile
 - [x] Testare locala
 - [x] Testare Docker
-- [ ] Testare Jenkins
+- [x] Testare Jenkins
 - [ ] Pull Request
 - [ ] Review Pull Request
 
@@ -166,7 +166,7 @@ Fisierul `Jenkinsfile` contine un pipeline cu urmatoarele etape:
 
 Screenshot Jenkins PASS:
 
-[poza aici]
+![Jenkins PASS](screenshots/poza5.png)
 
 ---
 
@@ -201,7 +201,5 @@ Informatiile au fost simplificate pentru scopul proiectului.
 
 ## Ce mai este de facut
 
-- rularea pipeline-ului in Jenkins
-- adaugarea screenshot-ului Jenkins PASS
 - crearea Pull Request-ului
 - realizarea unui review pentru un PR al unui coleg
