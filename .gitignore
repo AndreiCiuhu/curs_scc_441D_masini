@@ -216,3 +216,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Proiect SCC
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+!app/lib/
+!app/lib/__init__.py
+!app/lib/biblioteca_masini.py
