@@ -85,8 +85,8 @@ Au fost implementate:
 - [x] Testare locala
 - [x] Testare Docker
 - [x] Testare Jenkins
-- [ ] Pull Request
-- [ ] Review Pull Request
+- [x] Pull Request
+- [x] Review Pull Request
 
 ---
 
@@ -180,13 +180,13 @@ Pull Request planificat:
 
     dev_Florin_Cernat -> main_Florin_Cernat
 
-Status PR: in asteptare.
+Status PR: DONE!
 
 ---
 
 ## Review PR
 
-Momentan nu am realizat un review la PR-ul unui coleg.
+Am verificat PR-ul unui coleg din grupă și am acordat review de tip Approve.
 
 ---
 
@@ -201,5 +201,4 @@ Informatiile au fost simplificate pentru scopul proiectului.
 
 ## Ce mai este de facut
 
-- crearea Pull Request-ului
-- realizarea unui review pentru un PR al unui coleg
+- Proiect finalizat
