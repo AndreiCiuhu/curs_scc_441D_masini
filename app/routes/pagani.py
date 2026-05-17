@@ -11,9 +11,9 @@ def pagina_temei():
 def pagina_pagani():
 	return render_template('pagani/pagani.html')
 
-@pagani_bp.route('/masini/pagani/culoare')
+@pagani_bp.route('/masini/pagani/modele')
 def culoare():
-	return render_template('pagani/culoare.html', culoare=culoare_pagani())
+	return render_template('pagani/modele.html', culoare=culoare_pagani())
 
 @pagani_bp.route('/masini/pagani/descriere')
 def descriere():
