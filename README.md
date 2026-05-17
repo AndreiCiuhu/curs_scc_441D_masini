@@ -148,8 +148,8 @@ Aceste funcții sunt apelate în aplicația principală, în rutele dedicate:
 | Testare manuală | Realizat |
 | Testare cu Jenkins | Realizat |
 | README.md completat | Realizat |
-| Pull Request către branch-ul personal main | De completat |
-| Review Pull Request de la coleg | De completat |
+| Pull Request către branch-ul personal main | Realizat (PR#33) |
+| Review Pull Request de la coleg | Realizat (de kubitz1) |
 
 ---
 
@@ -369,8 +369,8 @@ După verificare și aprobare, documentația și proiectul vor fi integrate în 
 |---|---|
 | Cod adăugat în branch-ul de dezvoltare | Realizat |
 | README.md adăugat/completat | Realizat |
-| Pull Request către branch-ul personal main | De completat |
-| Review de la coleg | De completat |
+| Pull Request către branch-ul personal main | Realizat (PR#33) |
+| Review de la coleg | Realizat (de kubitz1) |
 
 ---
 
@@ -388,5 +388,5 @@ După verificare și aprobare, documentația și proiectul vor fi integrate în 
 
 Pentru finalizarea completă a proiectului mai trebuie realizate următoarele acțiuni:
 
-- [ ] Crearea Pull Request-ului din `dev_ciuhureanu_andrei` către `main_ciuhureanu_andrei`;
-- [ ] Obținerea review-ului de la cel puțin un coleg;
+- [x] Crearea Pull Request-ului din `dev_ciuhureanu_andrei` către `main_ciuhureanu_andrei` (PR#33);
+- [x] Obținerea review-ului de la cel puțin un coleg (kubitz1);
