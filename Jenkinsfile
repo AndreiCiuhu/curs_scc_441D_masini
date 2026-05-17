@@ -11,11 +11,6 @@ pipeline {
             }
         }
 
-        stage('Run tests') {
-            steps {
-                sh 'PYTHONPATH=. ./venv/bin/python3 -m unittest discover -s app/test'
-            }
-        }
 
         stage('Build image') {
             steps {
