@@ -1,7 +1,11 @@
 from flask import Blueprint
 
-from app.lib.biblioteca_masini import culoare_renault, descriere_renault
-
+from app.lib.biblioteca_masini import (
+    culoare_renault,
+    descriere_renault,
+    dotari_renault,
+    modele_renault,
+)
 
 renault_bp = Blueprint("renault", __name__)
 
@@ -24,3 +28,12 @@ def renault_culoare():
 @renault_bp.route("/masini/renault/descriere")
 def renault_descriere():
     return descriere_renault()
+
+@renault_bp.route("/masini/renault/dotari")
+def renault_dotari():
+    return dotari_renault()
+
+
+@renault_bp.route("/masini/renault/modele")
+def renault_modele():
+    return modele_renault()

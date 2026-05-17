@@ -16,16 +16,20 @@ In cadrul proiectului am adaugat functionalitatea pentru marca Renault.
 
 Au fost implementate:
 
-- doua functii in biblioteca aplicatiei:
+- patru functii in biblioteca aplicatiei:
   - culoare_renault()
   - descriere_renault()
+  - dotari_renault()
+  - modele_renault()
 
-- rutele cerute pentru aplicatia Flask:
+- rutele pentru aplicatia Flask:
   - /
   - /masini
   - /masini/renault
   - /masini/renault/culoare
   - /masini/renault/descriere
+  - /masini/renault/dotari
+  - /masini/renault/modele
 
 ---
 
@@ -53,6 +57,14 @@ Returneaza culorile disponibile pentru marca Renault.
 
 Returneaza o scurta descriere pentru marca Renault.
 
+### dotari_renault()
+
+Returneaza o lista de dotari posibile pentru modelele Renault.
+
+### modele_renault()
+
+Returneaza exemple de modele Renault populare.
+
 ---
 
 ## Rute implementate
@@ -64,6 +76,8 @@ Returneaza o scurta descriere pentru marca Renault.
 | /masini/renault | Pagina marcii Renault |
 | /masini/renault/culoare | Afiseaza rezultatul functiei culoare_renault() |
 | /masini/renault/descriere | Afiseaza rezultatul functiei descriere_renault() |
+| /masini/renault/dotari | Afiseaza rezultatul functiei dotari_renault() |
+| /masini/renault/modele | Afiseaza rezultatul functiei modele_renault() |
 
 ---
 
@@ -96,6 +110,8 @@ Au fost testate in browser urmatoarele rute:
     http://127.0.0.1:5000/masini/renault
     http://127.0.0.1:5000/masini/renault/culoare
     http://127.0.0.1:5000/masini/renault/descriere
+    http://127.0.0.1:5000/masini/renault/dotari
+    http://127.0.0.1:5000/masini/renault/modele
 
 Rezultat: rutele au functionat corect.
 
@@ -109,7 +125,7 @@ Testele au fost rulate cu:
 
 Rezultat:
 
-    Ran 2 tests
+    Ran 4 tests
 
     OK
 
