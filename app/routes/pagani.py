@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template
 from app.lib.biblioteca_masini import descriere_pagani, modele_pagani
 
-pagani_pb=Blueprint('pagani', __name__)
+pagani_bp=Blueprint('pagani', __name__)
 
 @pagani_bp.route('/masini')
 def pagina_temei():
@@ -13,7 +13,7 @@ def pagina_pagani():
 
 @pagani_bp.route('/masini/pagani/modele')
 def culoare():
-	return render_template('pagani/modele.html', culoare=culoare_pagani())
+	return render_template('pagani/modele.html', modele=modele_pagani())
 
 @pagani_bp.route('/masini/pagani/descriere')
 def descriere():
