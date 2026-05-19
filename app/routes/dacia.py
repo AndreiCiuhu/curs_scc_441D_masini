@@ -1,9 +1,7 @@
 from flask import Flask, url_for
-
-
+from app.lib.biblioteca_masini import culoare_dacia, descriere_dacia
 
 app = Flask(__name__)
-
 
 
 @app.route("/", methods=["GET"])
@@ -70,7 +68,7 @@ def index():
     return ret
 
 
-@app.route("/dacia", methods=["GET"])
+@app.route("/masini/dacia", methods=["GET"])
 def dacia():
     ret = ""
 
@@ -138,6 +136,18 @@ def dacia():
     ret += "<button>Dacia Duster</button>"
     ret += "</a>"
 
+    ret += "<br><br>"
+
+    ret += f'<a href="{url_for("culoare")}">'
+    ret += "<button>Culori disponibile</button>"
+    ret += "</a>"
+
+    ret += "<br><br>"
+
+    ret += f'<a href="{url_for("descriere")}">'
+    ret += "<button>Descriere Dacia</button>"
+    ret += "</a>"
+
     ret += "</div>"
 
     ret += "</body>"
@@ -146,7 +156,7 @@ def dacia():
     return ret
 
 
-@app.route("/dacia/duster", methods=["GET"])
+@app.route("/masini/dacia/duster", methods=["GET"])
 def dacia_duster():
     ret = ""
 
@@ -235,5 +245,19 @@ def dacia_duster():
     return ret
 
 
+@app.route("/masini/dacia/culoare", methods=["GET"])
+def culoare():
+    return culoare_dacia()
+
+
+@app.route("/masini/dacia/descriere", methods=["GET"])
+def descriere():
+    return descriere_dacia()
+
+
 if __name__ == "__main__":
     app.run(debug=True)
+
+@app.route("/")
+def home():
+    return index()
